@@ -1,0 +1,24 @@
+.destination {
+  width: 320px;
+  padding: 101px 25px 34px 25px;
+  box-sizing: border-box;
+  background-color: $destination-bg;
+  border-radius: 30px;
+}
+
+.destination__title {
+  padding-left: 25px;
+}
+
+.destination__description {
+  padding-left: 25px;
+  padding-bottom: 60px;
+}
+
+.destination__countries {
+  @include clear-list;
+}
+
+.destination__link {
+  margin-top: 25px;
+}

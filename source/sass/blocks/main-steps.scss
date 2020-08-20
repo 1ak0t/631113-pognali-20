@@ -1,0 +1,39 @@
+.main-steps__step {
+  height: 160px;
+  width: 270px;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+  & a {
+    color: $basic-blue-dark;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    display: block;
+    padding-top: 22px;
+    padding-left: 24px;
+    padding-right: 96px;
+    padding-bottom: 22px;
+  }
+
+  &--1 {
+    background-color: $basic-orange;
+    @include main-steps-pos(-80px);
+  }
+
+  &--2 {
+    background-color: $main-step-bg-2;
+    @include main-steps-pos(-80px*2);
+  }
+
+  &--3 {
+    background-color: $basic-yellow-dark;
+    @include main-steps-pos(-80px*3);
+  }
+
+  &--4 {
+    background-color: $basic-yellow;
+    @include main-steps-pos(-80px*4);
+    height: 80px;
+  }
+}

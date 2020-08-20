@@ -1,0 +1,38 @@
+.transport-list {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+
+}
+
+.transport-list__item {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 13px;
+
+  &--airplane {
+    background-image: url(../img/plane.svg);
+  }
+
+  &--car {
+    background-image: url(../img/bus.svg);
+  }
+
+  &--cycle {
+    background-image: url(../img/bike.svg);
+  }
+
+  &--foot {
+    background-image: url(../img/run.svg);
+  }
+
+  &--catalog {
+    width: 32px;
+    height: 32px;
+    background-color: $destination-bg;
+    border-radius: 50%;
+  }
+}

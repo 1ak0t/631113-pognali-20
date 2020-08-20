@@ -1,0 +1,10 @@
+.rate-list {
+  @include clear-list;
+
+  font-weight: 300;
+  margin-bottom: 31px;
+}
+
+.rate-list__link {
+  color: $basic-gray;
+}
