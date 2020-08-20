@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   width: 120px;
-
 }
 
 .transport-list__item {
@@ -14,19 +13,19 @@
   background-size: 13px;
 
   &--airplane {
-    background-image: url(../img/plane.svg);
+    background-image: url("../img/plane.svg");
   }
 
   &--car {
-    background-image: url(../img/bus.svg);
+    background-image: url("../img/bus.svg");
   }
 
   &--cycle {
-    background-image: url(../img/bike.svg);
+    background-image: url("../img/bike.svg");
   }
 
   &--foot {
-    background-image: url(../img/run.svg);
+    background-image: url("../img/run.svg");
   }
 
   &--catalog {

@@ -18,21 +18,25 @@
 
   &--1 {
     background-color: $basic-orange;
+
     @include main-steps-pos(-80px);
   }
 
   &--2 {
     background-color: $main-step-bg-2;
+
     @include main-steps-pos(-80px*2);
   }
 
   &--3 {
     background-color: $basic-yellow-dark;
+
     @include main-steps-pos(-80px*3);
   }
 
   &--4 {
     background-color: $basic-yellow;
+
     @include main-steps-pos(-80px*4);
     height: 80px;
   }
