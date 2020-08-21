@@ -1,7 +1,6 @@
 .destination {
-  width: 320px;
+  @include mobile-width;
   padding: 101px 25px 34px 25px;
-  box-sizing: border-box;
   background-color: $destination-bg;
   border-radius: 30px;
 }

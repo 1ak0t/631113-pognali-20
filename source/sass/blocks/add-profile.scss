@@ -1,4 +1,5 @@
 .add-profile {
+  @include mobile-width;
   background-color: $destination-bg;
   padding: 67px 25px 38px 50px;
   border-radius: 30px;

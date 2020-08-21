@@ -1,6 +1,9 @@
 .about {
-  background: $header-steps-bg url("/img/about-mobile@1x.png") center bottom no-repeat;
+  background: $header-steps-bg url("../img/about-mobile@1x.png") center bottom no-repeat;
+  width: 320px;
+  margin: 0 auto;
   color: $basic-white;
   padding: 72px 60px 82px 49px;
   border-radius: 30px;
+  box-sizing: border-box;
 }

@@ -1,4 +1,5 @@
 .page-footer {
+  @include mobile-width;
   background-color: $basic-white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -12,5 +13,5 @@
 }
 
 .page-footer__social {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid $footer-line;
 }

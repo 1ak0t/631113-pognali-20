@@ -1,10 +1,13 @@
 .page-header {
-  background: $basic-header url("/img/globe-back-mobile@1x.jpg") no-repeat;
+  background: $basic-header url("../img/globe-back-mobile@1x.jpg") no-repeat;
+  width: 320px;
+  margin: 0 auto;
   padding: 0 25px;
   padding-top: 28px;
   color: $basic-white;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  box-sizing: border-box;
 }
 
 .page-header__logo {
@@ -56,7 +59,7 @@
   margin: 0;
   box-sizing: border-box;
 
-  & cite {
+  cite {
     font-weight: bold;
     font-style: normal;
   }
