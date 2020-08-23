@@ -1,13 +1,12 @@
 .page-header {
-  background: $basic-header url("../img/globe-back-mobile@1x.jpg") no-repeat;
-  width: 320px;
-  margin: 0 auto;
+  background:url("../img/globe-back-mobile@1x.jpg") center top no-repeat;
+  color: $basic-white;
+}
+
+.page-header__container {
+  @include width($mobile-width);
   padding: 0 25px;
   padding-top: 28px;
-  color: $basic-white;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-sizing: border-box;
 }
 
 .page-header__logo {
@@ -18,7 +17,6 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding-bottom: 12px;
   padding-top: 61px;
   display: inline-block;
   border-bottom: 4px solid $basic-orange;
@@ -46,7 +44,10 @@
   position: relative;
   left: -25px;
   padding-left: 25px;
+  padding-bottom: 12px;
   box-sizing: border-box;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .page-header__review {

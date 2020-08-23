@@ -4,8 +4,8 @@
   padding: 0;
 }
 
-@mixin mobile-width {
-  width: 320px;
+@mixin width ($width) {
+  width: $width;
   margin: 0 auto;
   box-sizing: border-box;
 }
