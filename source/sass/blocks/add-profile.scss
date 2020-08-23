@@ -1,8 +1,11 @@
+.add-profile {
+  border-radius: 30px;
+  background-color: $destination-bg;
+}
+
 .add-profile__container {
   @include width($mobile-width);
-  background-color: $destination-bg;
   padding: 67px 25px 38px 50px;
-  border-radius: 30px;
 }
 
 .add-profile__link {

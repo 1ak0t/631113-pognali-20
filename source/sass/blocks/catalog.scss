@@ -1,8 +1,11 @@
+.catalog {
+  background-color: $destination-bg;
+}
+
 .catalog__container {
   @include width($mobile-width);
   padding-left: 25px;
   padding-right: 25px;
-  background-color: $destination-bg;
 }
 
 .catalog__list {

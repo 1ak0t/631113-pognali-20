@@ -1,11 +1,11 @@
 .about {
-  background:url("../img/about-mobile@1x.png") center bottom no-repeat;
+  background: $header-steps-bg url("../img/about-mobile@1x.png") center bottom no-repeat;
   color: $basic-white;
+  border-radius: 30px;
 }
 
 .about__container {
   @include width($mobile-width);
   background-color: $header-steps-bg;
   padding: 72px 60px 82px 49px;
-  border-radius: 30px;
 }

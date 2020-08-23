@@ -1,8 +1,11 @@
+.destination {
+  background-color: $destination-bg;
+  border-radius: 30px;
+}
+
 .destination__container {
   @include width($mobile-width);
   padding: 101px 25px 34px 25px;
-  background-color: $destination-bg;
-  border-radius: 30px;
 }
 
 .destination__title {
