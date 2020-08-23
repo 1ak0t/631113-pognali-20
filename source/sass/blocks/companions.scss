@@ -1,0 +1,32 @@
+.companions {
+  background-color: $header-steps-bg;
+  border-radius: 30px;
+  color: $basic-white;
+}
+
+.companions__container {
+  @include width($mobile-width);
+  padding: 101px 25px 31px 25px;
+}
+
+.companions__title {
+  padding-left: 25px;
+}
+
+.companions__description {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.companions__list {
+  @include clear-list;
+  margin-top: 54px;
+}
+
+.companions__user {
+  margin-bottom: 9px;
+}
+
+.companions__link {
+  margin-top: 20px;
+}

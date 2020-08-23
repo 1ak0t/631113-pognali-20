@@ -1,0 +1,20 @@
+.page-footer {
+  color: $basic-gray;
+  background-color: $basic-white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.page-footer__container {
+  @include width($mobile-width);
+  padding: 37px 25px 19px 25px;
+}
+
+.page-footer__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-footer__social {
+  border-bottom: 1px solid $footer-line;
+}

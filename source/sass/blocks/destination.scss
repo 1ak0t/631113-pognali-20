@@ -1,0 +1,26 @@
+.destination {
+  background-color: $destination-bg;
+  border-radius: 30px;
+}
+
+.destination__container {
+  @include width($mobile-width);
+  padding: 101px 25px 34px 25px;
+}
+
+.destination__title {
+  padding-left: 25px;
+}
+
+.destination__description {
+  padding-left: 25px;
+  padding-bottom: 60px;
+}
+
+.destination__countries {
+  @include clear-list;
+}
+
+.destination__link {
+  margin-top: 25px;
+}

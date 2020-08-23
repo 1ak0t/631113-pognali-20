@@ -1,0 +1,19 @@
+.social-list {
+  @include clear-list;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 37px;
+}
+
+.social-list__item {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  &--yellow {
+    background-color: $basic-yellow;
+  }
+}

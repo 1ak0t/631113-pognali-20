@@ -1,0 +1,72 @@
+.page-header {
+  background: $header-steps-bg url("../img/globe-back-mobile@1x.jpg") center top no-repeat;
+  color: $basic-white;
+}
+
+.page-header__container {
+  @include width($mobile-width);
+  padding: 0 25px;
+  padding-top: 28px;
+}
+
+.page-header__logo {
+  padding-bottom: 52px;
+}
+
+.page-header__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding-top: 61px;
+  display: inline-block;
+  border-bottom: 4px solid $basic-orange;
+
+  &--index {
+    display: block;
+    text-align: center;
+    border: 0;
+    padding-top: 0;
+  }
+}
+
+.page-header__man {
+  position: relative;
+  left: 55px;
+}
+
+.page-header__buttons {
+  position: relative;
+}
+
+.page-header__wrapper {
+  background-color: $header-steps-bg;
+  width: 320px;
+  position: relative;
+  left: -25px;
+  padding-left: 25px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.page-header__review {
+  background-color: $basic-blue-dark;
+  display: block;
+  position: relative;
+  left: -25px;
+  width: 320px;
+  padding: 48px 109px 109px 50px;
+  margin: 0;
+  box-sizing: border-box;
+
+  cite {
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.page-header__steps {
+  @include clear-list;
+  position: relative;
+}

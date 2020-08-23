@@ -1,0 +1,43 @@
+.user {
+  background-color: $basic-white;
+  border-radius: 10px;
+  position: relative;
+  padding-bottom: 23px;
+
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.user__level {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.user__name {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: $basic-blue-light;
+  text-align: center;
+}
+
+.user__countries {
+  display: flex;
+
+  @include clear-list;
+}
+
+.user__hashtags {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.user__transport {
+  @include clear-list;
+  margin: 0 auto;
+  margin-top: 17px;
+}

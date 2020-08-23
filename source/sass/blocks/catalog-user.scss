@@ -1,0 +1,41 @@
+.catalog-user {
+  background-color: $basic-white;
+  border-radius: 30px;
+  padding: 14px 22px 23px 18px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.catalog-user__img {
+  border-radius: 50%;
+}
+
+.catalog-user__name {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-blue-light;
+}
+
+.catalog-user__likes {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  color: $basic-blue;
+}
+
+.catalog-user__hashtags {
+  width: 176px;
+  font-size: 15px;
+}
+
+.catalog-user__invite {
+  display: block;
+  border-radius: 25px;
+  background-color: $basic-yellow;
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
