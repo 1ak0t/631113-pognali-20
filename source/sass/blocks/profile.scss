@@ -1,0 +1,24 @@
+.profile {
+  background-color: $destination-bg;
+}
+
+.profile__container {
+  @include width($mobile-width);
+  padding: 40px 25px 54px 25px;
+}
+
+.profile__photo {
+  border-radius: 50%;
+}
+
+.profile__change-photo {
+  display: block;
+  background-color: $special-blue-light;
+  border-radius: 20px;
+  color: $basic_blue;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}

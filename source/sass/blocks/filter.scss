@@ -1,0 +1,33 @@
+.filter {
+  margin-bottom: 21px;
+}
+
+.filter__container {
+  @include width($mobile-width);
+  background-color: $filter-bg;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 33px 25px 28px 25px;
+}
+
+.filter__title {
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $header-steps-bg;
+}
+
+.filter__continent {
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $header-steps-bg;
+}
+
+.filter__invis {
+  display: none;
+}
+
+.filter__countries-list {
+  display: grid;
+}

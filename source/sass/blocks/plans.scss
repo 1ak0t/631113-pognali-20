@@ -1,0 +1,28 @@
+.plans {
+  background-color: $special-blue-light;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.plans__container {
+  @include width($mobile-width);
+  padding: 28px 25px 59px 25px;
+}
+
+.plans__list {
+  @include clear-list;
+}
+
+.plans__card {
+  background-color: $basic-white;
+  border-radius: 10px;
+  padding: 23px;
+  margin-bottom: 10px;
+  color: $basic-blue;
+}
+
+.plans__travelers,
+.plans__date,
+.plans__change {
+  text-transform: uppercase;
+}

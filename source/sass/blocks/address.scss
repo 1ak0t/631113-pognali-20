@@ -1,0 +1,15 @@
+.address {
+  background-color: $basic-yellow;
+  border-radius: 30px;
+}
+
+.address__container {
+  @include width($mobile-width);
+
+  padding: 65px 25px 35px 25px;
+}
+
+.address__house {
+  display: block;
+  width: 143px;
+}
