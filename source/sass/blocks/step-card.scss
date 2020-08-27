@@ -1,0 +1,11 @@
+.step-card {
+  background-color: $basic-white;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.step-card__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: $basic-blue;
+}

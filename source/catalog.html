@@ -28,117 +28,125 @@
         <h1 class="page-header__title">Попутчики</h1>
       </div>
     </header>
-    <main>
+    <main class="page__main--catalog">
       <section class="filter">
-        <span class="filter__title">Фильтр по странам:</span>
-        <button class="filter__toggle"></button>
-        <button class="filter__continent">Европа</button>
-        <button class="filter__continent">Азия</button>
-        <button class="filter__continent">Америка</button>
-        <button class="filter__continent">Острова</button>
-        <ul>
-          <li>А</li>
-          <li>Б</li>
-          <li>В</li>
-          <li>Г</li>
-          <li>Д</li>
-          <li>Е</li>
-          <li>З</li>
-          <li>И</li>
-          <li>К</li>
-          <li>Л</li>
-          <li>М</li>
-          <li>Н</li>
-          <li>О</li>
-          <li>П</li>
-          <li>Р</li>
-          <li>С</li>
-          <li>Т</li>
-          <li>У</li>
-          <li>Ф</li>
-          <li>Х</li>
-          <li>Ч</li>
-          <li>Ш</li>
-          <li>Э</li>
-          <li>Ю</li>
-          <li>Я</li>
-        </ul>
-        <a href="/countries/Australia/">Австралия</a>
-        <a href="/countries/Austria/"">Австрия</a>
-        <a href="/countries/Azerbaijan/"">Азербайджан</a>
-        <a href="/countries/Albany/"">Албания</a>
-        <a href="/countries/Algerian/"">Алжир</a>
-        <a href="/countries/Angola/"">Ангола</a>
-        <a href="/countries/Andorra/"">Андорра</a>
-        <a href="/countries/Antigua_and_Barbuda/"">Антигуа и Барбуда</a>
-        <a href="/countries/Argentine/"">Аргентина</a>
-        <a href="/countries/Armenia/"">Армения</a>
-        <a href="/countries/Afghanistan/"">Афганистан</a>
-        <buttom class="filter__close">Свернуть</buttom>
+        <div class="filter__container">
+          <span class="filter__title">Фильтр по странам:</span>
+          <div class="filter__invis">
+            <button class="filter__toggle"></button>
+            <button class="filter__continent">Европа</button>
+            <button class="filter__continent">Азия</button>
+            <button class="filter__continent">Америка</button>
+            <button class="filter__continent">Острова</button>
+            <ul>
+              <li>А</li>
+              <li>Б</li>
+              <li>В</li>
+              <li>Г</li>
+              <li>Д</li>
+              <li>Е</li>
+              <li>З</li>
+              <li>И</li>
+              <li>К</li>
+              <li>Л</li>
+              <li>М</li>
+              <li>Н</li>
+              <li>О</li>
+              <li>П</li>
+              <li>Р</li>
+              <li>С</li>
+              <li>Т</li>
+              <li>У</li>
+              <li>Ф</li>
+              <li>Х</li>
+              <li>Ч</li>
+              <li>Ш</li>
+              <li>Э</li>
+              <li>Ю</li>
+              <li>Я</li>
+            </ul>
+            <div class="filter__countries-list">
+              <a href="/countries/Australia/">Австралия</a>
+              <a href="/countries/Austria/"">Австрия</a>
+              <a href="/countries/Azerbaijan/"">Азербайджан</a>
+              <a href="/countries/Albany/"">Албания</a>
+              <a href="/countries/Algerian/"">Алжир</a>
+              <a href="/countries/Angola/"">Ангола</a>
+              <a href="/countries/Andorra/"">Андорра</a>
+              <a href="/countries/Antigua_and_Barbuda/"">Антигуа и Барбуда</a>
+              <a href="/countries/Argentine/"">Аргентина</a>
+              <a href="/countries/Armenia/"">Армения</a>
+              <a href="/countries/Afghanistan/"">Афганистан</a>
+            </div>
+            <buttom class="filter__close">Свернуть</buttom>
+          </div>
+        </div>
       </section>
       <section class="choose-companion">
-        <h3 class="choose-companion__title">Подберите идеального попутчика</h3>
-        <form action="https://echo.htmlacademy.ru" class="choose-companion__form" method="POST">
-          <div class="choose-companion__hobby">
-            <button type="button">Хобби</button>
-            <input type="checkbox" name="gym" id="gym">
-            <label for="gym">Спортзал</label>
-            <input type="checkbox" name="hookah" id="hookah">
-            <label for="hookah">Кальян</label>
-            <input type="checkbox" name="sofa" id="sofa">
-            <label for="sofa">Диван</label>
-          </div>
-          <div class="choose-companion__music">
-            <button type="button">Музыка</button>
-            <input type="checkbox" name="rock" id="rock">
-            <label for="rock">Тяжелый рок</label>
-            <input type="checkbox" name="rap" id="rap">
-            <label for="rap">Русский рэп</label>
-            <input type="checkbox" name="eurodance" id="eurodance">
-            <label for="eurodance">Евроденс</label>
-          </div>
-          <div class="choose-companion__food">
-            <button type="button">Еда</button>
-            <input type="checkbox" name="meat" id="meat">
-            <label for="meat">Мясоед</label>
-            <input type="checkbox" name="healthy" id="healthy">
-            <label for="healthy">Сидит на ПП</label>
-            <input type="checkbox" name="vegan" id="vegan">
-            <label for="vegan">Веган-сыроед</label>
-          </div>
-          <div class="choose-companion__transport">
-            <button type="button">Транспорт</button>
-            <input type="checkbox" name="airbus" id="airbus">
-            <label for="airbus"></label>
-            <input type="checkbox" name="car" id="car">
-            <label for="car"></label>
-            <input type="checkbox" name="cycle" id="cycle">
-            <label for="cycle"></label>
-            <input type="checkbox" name="walk" id="walk">
-            <label for="walk"></label>
-          </div>
-          <div class="choose-companion__level">
-            <button type="button">Левел</button>
-            <div class="choose-companion__range level-range">
-              <div class="level-range__price-control">
-                <label class="level-range__min-price">
-                  <input type="number" name="min-price" value="30">
-                </label>
-                <label class="level-range__max-price">
-                  <input type="number" name="max-price" value="100">
-                </label>
-              </div>
-              <div class="level-range__range-control">
-                <div class="level-range__scale">
-                  <div class="level-range__bar" style="width:55%; margin-left: 11%;"></div>
+        <div class="choose-companion__container">
+          <h3 class="choose-companion__title">Подберите идеального попутчика</h3>
+          <form action="https://echo.htmlacademy.ru" class="choose-companion__form" method="POST">
+            <div class="choose-companion__hobby">
+              <div class="choose-companion__toggle" type="button">Хобби</div>
+              <input type="checkbox" name="gym" id="gym">
+              <label for="gym">Спортзал</label>
+              <input type="checkbox" name="hookah" id="hookah">
+              <label for="hookah">Кальян</label>
+              <input type="checkbox" name="sofa" id="sofa">
+              <label for="sofa">Диван</label>
+            </div>
+            <div class="choose-companion__music">
+              <div class="choose-companion__toggle" type="button">Музыка</div>
+              <input type="checkbox" name="rock" id="rock">
+              <label for="rock">Тяжелый рок</label>
+              <input type="checkbox" name="rap" id="rap">
+              <label for="rap">Русский рэп</label>
+              <input type="checkbox" name="eurodance" id="eurodance">
+              <label for="eurodance">Евроденс</label>
+            </div>
+            <div class="choose-companion__food">
+              <div class="choose-companion__toggle" type="button">Еда</div>
+              <input type="checkbox" name="meat" id="meat">
+              <label for="meat">Мясоед</label>
+              <input type="checkbox" name="healthy" id="healthy">
+              <label for="healthy">Сидит на ПП</label>
+              <input type="checkbox" name="vegan" id="vegan">
+              <label for="vegan">Веган-сыроед</label>
+            </div>
+            <div class="choose-companion__transport">
+              <div class="choose-companion__toggle" type="button">Транспорт</div>
+              <input type="checkbox" name="airbus" id="airbus">
+              <label for="airbus"></label>
+              <input type="checkbox" name="car" id="car">
+              <label for="car"></label>
+              <input type="checkbox" name="cycle" id="cycle">
+              <label for="cycle"></label>
+              <input type="checkbox" name="walk" id="walk">
+              <label for="walk"></label>
+            </div>
+            <div class="choose-companion__level">
+              <div class="choose-companion__toggle" type="button">Левел</div>
+              <div class="choose-companion__range level-range">
+                <div class="level-range__price-control">
+                  <label class="level-range__min-price">
+                    <input type="number" name="min-price" value="30">
+                  </label>
+                  <label class="level-range__max-price">
+                    <input type="number" name="max-price" value="100">
+                  </label>
                 </div>
-                <div class="level-range__dot level-range__dot--min" tabindex="0" style="margin-left: 11%;"></div>
-                <div class="level-range__dot level-range__dot--max" tabindex="0" style="margin-left: 55%;"></div>
+                <div class="level-range__range-control">
+                  <div class="level-range__scale">
+                    <div class="level-range__bar" style="width:55%; margin-left: 11%;"></div>
+                  </div>
+                  <div class="level-range__dot level-range__dot--min" tabindex="0" style="margin-left: 11%;"></div>
+                  <div class="level-range__dot level-range__dot--max" tabindex="0" style="margin-left: 55%;"></div>
+                </div>
               </div>
             </div>
-          </div>
-          <input class="choose-companion__send-form" type="submit" value="Показать">
-        </form>
+            <input class="choose-companion__send-form" type="submit" value="Показать">
+          </form>
+        </div>
       </section>
       <section class="catalog">
         <div class="catalog__container">

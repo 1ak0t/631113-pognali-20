@@ -1,0 +1,35 @@
+.registration {
+  background-color: $header-steps-bg;
+  border-radius: 30px;
+}
+
+.registration__container {
+  @include width($mobile-width);
+  padding: 105px 25px 44px 25px;
+}
+
+.registration__title {
+  text-align: center;
+}
+
+.registration__paragraph {
+  text-align: center;
+  color: $basic-white;
+}
+
+.registration__link {
+  color: $basic-yellow;
+}
+
+.registration__answer {
+  text-align: center;
+  color: $basic-white;
+}
+
+.registration__tel {
+  display: block;
+}
+
+.registration__email {
+  display: block;
+}

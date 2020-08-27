@@ -8,6 +8,12 @@
   }
 }
 
+.page__main {
+  &--catalog {
+    background-color: $destination-bg;
+  }
+}
+
 a {
   text-decoration: none;
   color: $basic-blue;

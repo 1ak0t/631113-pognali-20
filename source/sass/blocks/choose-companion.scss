@@ -1,0 +1,26 @@
+.choose-companion {
+  background-color: $destination-bg;
+}
+
+.choose-companion__container {
+  @include width(270px);
+  background-color: $basic-yellow;
+  padding: 26px 25px 22px 25px;
+  margin-bottom: 28px;
+  border-radius: 20px;
+}
+
+.choose-companion__title {
+  color: $basic-blue-light;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  width: 145px;
+}
+
+.choose-companion__toggle {
+  font-weight: bold;
+  line-height: 18px;
+  color: $basic-blue-light;
+  text-transform: uppercase;
+}
