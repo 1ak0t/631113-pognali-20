@@ -11,10 +11,18 @@
   &--phone {
     background: $basic-orange url("../img/topmenu-phone.svg") center center no-repeat;
     background-size: 18px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      display: none;
+    }
   }
 
   &--email {
     background: $basic-yellow-dark url("../img/topmenu-mail.svg") center center no-repeat;
     background-size: 18px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      display: none;
+    }
   }
 }

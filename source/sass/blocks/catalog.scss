@@ -6,10 +6,28 @@
   @include width($mobile-width);
   padding-left: 25px;
   padding-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include width($tablet-width);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width(951px);
+  }
 }
 
 .catalog__list {
   @include clear-list;
+}
+
+.catalog__user {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .catalog__more-user {

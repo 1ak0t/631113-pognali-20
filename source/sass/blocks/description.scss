@@ -4,4 +4,9 @@
   &--bold {
     font-weight: bold;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }

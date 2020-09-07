@@ -1,53 +1,218 @@
 .page-header {
-  background: $header-steps-bg url("../img/globe-back-mobile@1x.jpg") center top no-repeat;
   color: $basic-white;
+  background-color: $basic-blue-dark;
 }
 
 .page-header__container {
   @include width($mobile-width);
+  background: $basic-blue-dark url("../img/globe-back-mobile@1x.jpg") center top no-repeat;
   padding: 0 25px;
-  padding-top: 28px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include width ($tablet-width);
+    background: url("../img/globe-back-tablet@1x.jpg") center 382px no-repeat;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width ($desktop-width);
+    background: url("../img/globe-back-desktop@1x.jpg") center top no-repeat;
+    padding: 0;
+  }
+}
+
+.page-header__top {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    height: 132px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-blue-dark;
+  }
+
+  &--inner {
+    .page-header__buttons {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-color: $basic-blue-dark;
+    }
+  }
 }
 
 .page-header__logo {
-  padding-bottom: 52px;
+  display: none;
+
+  &--mobile {
+    display: inline-block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
+  }
+}
+
+.page-header__bottom {
+  display: grid;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page-header__title-container {
+  a {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 75px;
+    padding-left: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    a {
+      color: $basic-white;
+      display: inline-block;
+    }
+  }
 }
 
 .page-header__title {
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding-top: 61px;
   display: inline-block;
   border-bottom: 4px solid $basic-orange;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 67px;
+  }
+
   &--index {
     display: block;
+    width: 238px;
+    margin: 0 auto;
     text-align: center;
     border: 0;
     padding-top: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 399px;
+      font-size: 60px;
+      line-height: 70px;
+      margin-top: 30px;
+      grid-column: 1/3;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 418px;
+      text-align: left;
+      margin-top: 64px;
+      margin-left: 127px;
+      grid-column: 1/2;
+    }
+  }
+}
+
+.page-header_man-container {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 2/3;
   }
 }
 
 .page-header__man {
   position: relative;
-  left: 55px;
+  display: none;
+
+  &--mobile {
+    display: inline-block;
+    left: 55px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
+  }
 }
 
 .page-header__buttons {
   position: relative;
+
+  @media (max-width: (($tablet-width)-1)) {
+    position: absolute;
+    top: 458px;
+    left: 26px;
+    z-index: 2;
+  }
 }
 
 .page-header__wrapper {
   background-color: $header-steps-bg;
-  width: 320px;
   position: relative;
-  left: -25px;
-  padding-left: 25px;
+  margin: 0 auto;
   padding-bottom: 12px;
   box-sizing: border-box;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
+  }
 }
 
 .page-header__review {
@@ -63,6 +228,15 @@
   cite {
     font-weight: bold;
     font-style: normal;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 

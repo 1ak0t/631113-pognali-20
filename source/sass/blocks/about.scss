@@ -1,11 +1,54 @@
 .about {
-  background: $header-steps-bg url("../img/about-mobile@1x.png") center bottom no-repeat;
+  background: $header-steps-bg;
   color: $basic-white;
   border-radius: 30px;
 }
 
 .about__container {
   @include width($mobile-width);
-  background-color: $header-steps-bg;
+  background: $header-steps-bg url("../img/about-mobile@1x.png") center bottom no-repeat;
   padding: 72px 60px 82px 49px;
+  display: grid;
+
+  .about__link {
+    width: 275px;
+    font-size: 24px;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include width ($tablet-width);
+    background: $header-steps-bg;
+    grid-template-columns: 309px 1fr;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width ($desktop-width);
+    grid-template-columns: 619px 1fr;
+  }
+}
+
+.about__img {
+  display: none;
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
+  }
 }

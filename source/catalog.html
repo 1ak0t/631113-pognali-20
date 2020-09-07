@@ -8,24 +8,38 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__container">
-        <a href="index.html"><img src="img/logo-mobile-white@1x.png" alt="" width="100" height="19"></a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle"></button>
-          <ul class="main-nav__list menu-list">
-            <li class="menu-list__item"><a href="#" class="menu-list__link">О сервисе</a></li>
-            <li class="menu-list__item"><a href="form.html" class="menu-list__link">Направления</a></li>
-            <li class="menu-list__item"><a href="#" class="menu-list__link">Попутчики</a></li>
-          </ul>
-          <a href="#" class="main-nav__login login-button">Авторизация</a>
-          <a href="tel:88005558628" class="main-nav__tel">8 800 555-86-28</a>
-          <a href="mailto:mail@htmlacademy.ru" class="main-nav__email">mail@htmlacademy.ru</a>
-          <ul class="main-nav__social social-list">
-            <li class="social-list__item"><a href="#" class="social-list__link">Фейсбук</a></li>
-            <li class="social-list__item"><a href="#" class="social-list__link">ВКонтакте</a></li>
-            <li class="social-list__item"><a href="#" class="social-list__link">Инстаграм</a></li>
-          </ul>
-        </nav>
-        <h1 class="page-header__title">Попутчики</h1>
+        <div class="page-header__top page-header__top--inner">
+          <div class="page-header__logo-container">
+            <img class="page-header__logo page-header__logo--mobile" src="img/logo-mobile-white@1x.png" alt="" width="100" height="19">
+            <img class="page-header__logo page-header__logo--tablet" src="img/logo-tablet-white@1x.png" alt="" width="164" height="42">
+            <img class="page-header__logo page-header__logo--desktop" src="img/logo-desktop-white@1x.png" alt="" width="164" height="42">
+          </div>
+          <button class="page-header__toggle"></button>
+          <nav class="main-nav">
+            <ul class="main-nav__list menu-list">
+              <li class="menu-list__item"><a href="#" class="menu-list__link">О сервисе</a></li>
+              <li class="menu-list__item"><a href="form.html" class="menu-list__link">Направления</a></li>
+              <li class="menu-list__item"><a href="catalog.html" class="menu-list__link">Попутчики</a></li>
+            </ul>
+            <button class="main-nav__login login-button">Авторизация</button>
+            <a href="tel:88005558628" class="main-nav__tel main-tel">8 800 555-86-28</a>
+            <a href="mailto:mail@htmlacademy.ru" class="main-nav__email main-email">mail@htmlacademy.ru</a>
+            <ul class="main-nav__social social-list">
+              <li class="social-list__item"><a href="#" class="social-list__link">Фейсбук</a></li>
+              <li class="social-list__item"><a href="#" class="social-list__link">ВКонтакте</a></li>
+              <li class="social-list__item"><a href="#" class="social-list__link">Инстаграм</a></li>
+            </ul>
+          </nav>
+          <div class="page-header__buttons buttons-list">
+            <a href="tel:88005558628" class="buttons-list__item buttons-list__item--phone"></a>
+            <a href="mailto:mail@htmlacademy.ru" class="buttons-list__item buttons-list__item--email"></a>
+            <a href="#" class="buttons-list__item login-button">Авторизация</a>
+          </div>
+        </div>
+        <div class="page-header__title-container">
+          <h1 class="page-header__title">Попутчики</h1>
+          <a href="" class="page-header__return">НА ГЛАВНУЮ</a>
+        </div>
       </div>
     </header>
     <main class="page__main--catalog">
@@ -254,14 +268,20 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <img class="page-footer__logo" src="img/logo-mobile-blue@1x.png" alt="" width="100" height="19">
+        <div class="page-footer__logo-container">
+          <img class="page-footer__logo page-footer__logo--mobile" src="img/logo-mobile-blue@1x.png" alt="" width="100" height="19">
+          <img class="page-footer__logo page-footer__logo--tablet" src="img/logo-tablet-blue@1x.png" alt="" width="164" height="42">
+          <img class="page-footer__logo page-footer__logo--desktop" src="img/logo-desktop-blue@1x.png" alt="" width="200" height="55">
+        </div>
         <ul class="page-footer__social social-list">
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
         </ul>
-        <span class="page-footer_copyright">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="" class="page-footer__copyright-img" width="27" height="33"></a>
+        <div class="page-footer__copyright">
+          <span class="page-footer_copyright">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="" class="page-footer__copyright-img" width="27" height="33"></a>
+        </div>
       </div>
     </footer>
   </body>
