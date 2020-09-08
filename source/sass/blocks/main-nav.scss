@@ -1,3 +1,46 @@
 .main-nav {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
+  .main-nav__social {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $desktop-width) {
+    @include clear-list;
+    display: flex;
+  }
+
+  a {
+    color: $basic-white;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 33px;
+  }
+}
+
+.main-nav__login {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__tel {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__email {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

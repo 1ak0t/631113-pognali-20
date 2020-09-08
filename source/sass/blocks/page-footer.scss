@@ -8,11 +8,45 @@
 .page-footer__container {
   @include width($mobile-width);
   padding: 37px 25px 19px 25px;
+
+  @media (min-width: $tablet-width) {
+    @include width($tablet-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width($desktop-width);
+  }
 }
 
 .page-footer__logo {
-  display: block;
-  margin: 0 auto;
+  display: none;
+
+  &--mobile {
+    display: inline-block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
+  }
 }
 
 .page-footer__social {
