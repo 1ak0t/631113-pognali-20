@@ -81,6 +81,12 @@
   }
 }
 
+.page-header__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .page-header__bottom {
   display: grid;
   justify-content: space-between;
@@ -236,7 +242,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
 }
 
