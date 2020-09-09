@@ -1,5 +1,10 @@
 .catalog {
   background-color: $destination-bg;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
 
 .catalog__container {

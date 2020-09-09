@@ -3,6 +3,10 @@
   font-weight: bold;
   line-height: 22px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+  }
 }
 
 .main-email--yellow {

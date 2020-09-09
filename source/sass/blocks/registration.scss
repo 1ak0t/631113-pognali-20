@@ -6,6 +6,16 @@
 .registration__container {
   @include width($mobile-width);
   padding: 105px 25px 44px 25px;
+
+  @media (min-width: $tablet-width) {
+    @include width($tablet-width);
+    padding: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width($desktop-width);
+    padding: 133px;
+  }
 }
 
 .registration__title {
@@ -15,6 +25,15 @@
 .registration__paragraph {
   text-align: center;
   color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+    margin: 0 auto;
+  }
+}
+
+.registration__form {
+  display: flex;
 }
 
 .registration__link {
@@ -24,6 +43,15 @@
 .registration__answer {
   text-align: center;
   color: $basic-white;
+}
+
+.registration__contact-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+    margin: 0 auto;
+  }
 }
 
 .registration__tel {

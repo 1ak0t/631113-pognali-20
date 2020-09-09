@@ -8,9 +8,16 @@
   }
 }
 
-.page__main {
-  &--catalog {
-    background-color: $destination-bg;
+.page__main-catalog {
+  background-color: $destination-bg;
+}
+
+.page__catalog-container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1035px 285px;
+    
+    @include width($desktop-width);
   }
 }
 

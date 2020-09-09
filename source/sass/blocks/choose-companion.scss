@@ -1,5 +1,10 @@
 .choose-companion {
   background-color: $destination-bg;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
 
 .choose-companion__container {
@@ -8,6 +13,14 @@
   padding: 26px 25px 22px 25px;
   margin-bottom: 28px;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include width(($tablet-width)-80);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width(285px);
+  }
 }
 
 .choose-companion__title {
@@ -16,6 +29,10 @@
   line-height: 22px;
   font-weight: bold;
   width: 145px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .choose-companion__toggle {

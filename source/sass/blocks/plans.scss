@@ -7,6 +7,14 @@
 .plans__container {
   @include width($mobile-width);
   padding: 28px 25px 59px 25px;
+
+  @media (min-width: $tablet-width) {
+    @include width($tablet-width);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width($desktop-width);
+  }
 }
 
 .plans__list {
@@ -19,6 +27,92 @@
   padding: 23px;
   margin-bottom: 10px;
   color: $basic-blue;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 50px 1fr 200px 200px 200px;
+  }
+}
+
+.plans__country-number {
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.plans__country {
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+.plans__travelers {
+  grid-column: 1/3;
+  grid-row: 2/3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
+.plans__date {
+  grid-column: 1/3;
+  grid-row: 3/4;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+}
+
+.plans__change {
+  grid-column: 1/3;
+  grid-row: 4/5;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
 }
 
 .plans__travelers,

@@ -42,265 +42,267 @@
         </div>
       </div>
     </header>
-    <main class="page__main">
-      <section class="filter">
-        <div class="filter__container">
-          <span class="filter__title">Фильтр по странам:</span>
-          <div class="filter__invis">
-            <button class="filter__toggle"></button>
-            <button class="filter__continent">Европа</button>
-            <button class="filter__continent">Азия</button>
-            <button class="filter__continent">Америка</button>
-            <button class="filter__continent">Острова</button>
-            <ul>
-              <li>А</li>
-              <li>Б</li>
-              <li>В</li>
-              <li>Г</li>
-              <li>Д</li>
-              <li>Е</li>
-              <li>З</li>
-              <li>И</li>
-              <li>К</li>
-              <li>Л</li>
-              <li>М</li>
-              <li>Н</li>
-              <li>О</li>
-              <li>П</li>
-              <li>Р</li>
-              <li>С</li>
-              <li>Т</li>
-              <li>У</li>
-              <li>Ф</li>
-              <li>Х</li>
-              <li>Ч</li>
-              <li>Ш</li>
-              <li>Э</li>
-              <li>Ю</li>
-              <li>Я</li>
-            </ul>
-            <div class="filter__countries-list">
-              <a href="/countries/Australia/">Австралия</a>
-              <a href="/countries/Austria/"">Австрия</a>
-              <a href="/countries/Azerbaijan/"">Азербайджан</a>
-              <a href="/countries/Albany/"">Албания</a>
-              <a href="/countries/Algerian/"">Алжир</a>
-              <a href="/countries/Angola/"">Ангола</a>
-              <a href="/countries/Andorra/"">Андорра</a>
-              <a href="/countries/Antigua_and_Barbuda/"">Антигуа и Барбуда</a>
-              <a href="/countries/Argentine/"">Аргентина</a>
-              <a href="/countries/Armenia/"">Армения</a>
-              <a href="/countries/Afghanistan/"">Афганистан</a>
+    <main class="page__main-catalog">
+      <div class="page__catalog-container">
+        <section class="filter">
+          <div class="filter__container">
+            <span class="filter__title">Фильтр по странам:</span>
+            <div class="filter__invis">
+              <button class="filter__toggle"></button>
+              <button class="filter__continent">Европа</button>
+              <button class="filter__continent">Азия</button>
+              <button class="filter__continent">Америка</button>
+              <button class="filter__continent">Острова</button>
+              <ul>
+                <li>А</li>
+                <li>Б</li>
+                <li>В</li>
+                <li>Г</li>
+                <li>Д</li>
+                <li>Е</li>
+                <li>З</li>
+                <li>И</li>
+                <li>К</li>
+                <li>Л</li>
+                <li>М</li>
+                <li>Н</li>
+                <li>О</li>
+                <li>П</li>
+                <li>Р</li>
+                <li>С</li>
+                <li>Т</li>
+                <li>У</li>
+                <li>Ф</li>
+                <li>Х</li>
+                <li>Ч</li>
+                <li>Ш</li>
+                <li>Э</li>
+                <li>Ю</li>
+                <li>Я</li>
+              </ul>
+              <div class="filter__countries-list">
+                <a href="/countries/Australia/">Австралия</a>
+                <a href="/countries/Austria/"">Австрия</a>
+                <a href="/countries/Azerbaijan/"">Азербайджан</a>
+                <a href="/countries/Albany/"">Албания</a>
+                <a href="/countries/Algerian/"">Алжир</a>
+                <a href="/countries/Angola/"">Ангола</a>
+                <a href="/countries/Andorra/"">Андорра</a>
+                <a href="/countries/Antigua_and_Barbuda/"">Антигуа и Барбуда</a>
+                <a href="/countries/Argentine/"">Аргентина</a>
+                <a href="/countries/Armenia/"">Армения</a>
+                <a href="/countries/Afghanistan/"">Афганистан</a>
+              </div>
+              <buttom class="filter__close">Свернуть</buttom>
             </div>
-            <buttom class="filter__close">Свернуть</buttom>
           </div>
-        </div>
-      </section>
-      <section class="choose-companion">
-        <div class="choose-companion__container">
-          <h3 class="choose-companion__title">Подберите идеального попутчика</h3>
-          <form action="https://echo.htmlacademy.ru" class="choose-companion__form" method="POST">
-            <div class="choose-companion__hobby">
-              <div class="choose-companion__toggle" type="button">Хобби</div>
-              <input type="checkbox" name="gym" id="gym">
-              <label for="gym">Спортзал</label>
-              <input type="checkbox" name="hookah" id="hookah">
-              <label for="hookah">Кальян</label>
-              <input type="checkbox" name="sofa" id="sofa">
-              <label for="sofa">Диван</label>
-            </div>
-            <div class="choose-companion__music">
-              <div class="choose-companion__toggle" type="button">Музыка</div>
-              <input type="checkbox" name="rock" id="rock">
-              <label for="rock">Тяжелый рок</label>
-              <input type="checkbox" name="rap" id="rap">
-              <label for="rap">Русский рэп</label>
-              <input type="checkbox" name="eurodance" id="eurodance">
-              <label for="eurodance">Евроденс</label>
-            </div>
-            <div class="choose-companion__food">
-              <div class="choose-companion__toggle" type="button">Еда</div>
-              <input type="checkbox" name="meat" id="meat">
-              <label for="meat">Мясоед</label>
-              <input type="checkbox" name="healthy" id="healthy">
-              <label for="healthy">Сидит на ПП</label>
-              <input type="checkbox" name="vegan" id="vegan">
-              <label for="vegan">Веган-сыроед</label>
-            </div>
-            <div class="choose-companion__transport">
-              <div class="choose-companion__toggle" type="button">Транспорт</div>
-              <input type="checkbox" name="airbus" id="airbus">
-              <label for="airbus"></label>
-              <input type="checkbox" name="car" id="car">
-              <label for="car"></label>
-              <input type="checkbox" name="cycle" id="cycle">
-              <label for="cycle"></label>
-              <input type="checkbox" name="walk" id="walk">
-              <label for="walk"></label>
-            </div>
-            <div class="choose-companion__level">
-              <div class="choose-companion__toggle" type="button">Левел</div>
-              <div class="choose-companion__range level-range">
-                <div class="level-range__price-control">
-                  <label class="level-range__min-price">
-                    <input type="number" name="min-price" value="30">
-                  </label>
-                  <label class="level-range__max-price">
-                    <input type="number" name="max-price" value="100">
-                  </label>
-                </div>
-                <div class="level-range__range-control">
-                  <div class="level-range__scale">
-                    <div class="level-range__bar" style="width:55%; margin-left: 11%;"></div>
+        </section>
+        <section class="choose-companion">
+          <div class="choose-companion__container">
+            <h3 class="choose-companion__title">Подберите идеального попутчика</h3>
+            <form action="https://echo.htmlacademy.ru" class="choose-companion__form" method="POST">
+              <div class="choose-companion__hobby">
+                <div class="choose-companion__toggle" type="button">Хобби</div>
+                <input type="checkbox" name="gym" id="gym">
+                <label for="gym">Спортзал</label>
+                <input type="checkbox" name="hookah" id="hookah">
+                <label for="hookah">Кальян</label>
+                <input type="checkbox" name="sofa" id="sofa">
+                <label for="sofa">Диван</label>
+              </div>
+              <div class="choose-companion__music">
+                <div class="choose-companion__toggle" type="button">Музыка</div>
+                <input type="checkbox" name="rock" id="rock">
+                <label for="rock">Тяжелый рок</label>
+                <input type="checkbox" name="rap" id="rap">
+                <label for="rap">Русский рэп</label>
+                <input type="checkbox" name="eurodance" id="eurodance">
+                <label for="eurodance">Евроденс</label>
+              </div>
+              <div class="choose-companion__food">
+                <div class="choose-companion__toggle" type="button">Еда</div>
+                <input type="checkbox" name="meat" id="meat">
+                <label for="meat">Мясоед</label>
+                <input type="checkbox" name="healthy" id="healthy">
+                <label for="healthy">Сидит на ПП</label>
+                <input type="checkbox" name="vegan" id="vegan">
+                <label for="vegan">Веган-сыроед</label>
+              </div>
+              <div class="choose-companion__transport">
+                <div class="choose-companion__toggle" type="button">Транспорт</div>
+                <input type="checkbox" name="airbus" id="airbus">
+                <label for="airbus"></label>
+                <input type="checkbox" name="car" id="car">
+                <label for="car"></label>
+                <input type="checkbox" name="cycle" id="cycle">
+                <label for="cycle"></label>
+                <input type="checkbox" name="walk" id="walk">
+                <label for="walk"></label>
+              </div>
+              <div class="choose-companion__level">
+                <div class="choose-companion__toggle" type="button">Левел</div>
+                <div class="choose-companion__range level-range">
+                  <div class="level-range__price-control">
+                    <label class="level-range__min-price">
+                      <input type="number" name="min-price" value="30">
+                    </label>
+                    <label class="level-range__max-price">
+                      <input type="number" name="max-price" value="100">
+                    </label>
                   </div>
-                  <div class="level-range__dot level-range__dot--min" tabindex="0" style="margin-left: 11%;"></div>
-                  <div class="level-range__dot level-range__dot--max" tabindex="0" style="margin-left: 55%;"></div>
+                  <div class="level-range__range-control">
+                    <div class="level-range__scale">
+                      <div class="level-range__bar" style="width:55%; margin-left: 11%;"></div>
+                    </div>
+                    <div class="level-range__dot level-range__dot--min" tabindex="0" style="margin-left: 11%;"></div>
+                    <div class="level-range__dot level-range__dot--max" tabindex="0" style="margin-left: 55%;"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <input class="choose-companion__send-form" type="submit" value="Показать">
-          </form>
-        </div>
-      </section>
-      <section class="catalog">
-        <div class="catalog__container">
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <article class="catalog__user catalog-user">
-                <a href="profile.html"><img class="catalog-user__img" src="img/firsova-mobile@1x.jpg" alt="" width="70" height="70"></a>
-                <a href="profile.html"><h3 class="catalog-user__name">Таня Фирсова</h3></a>
-                <button class="catalog-user__like"></button>
-                <span class="catalog-user__likes">1,5 М</span>
-                <p class="catalog-user__hashtags tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-                <div class="catalog-user__countries-container">
-                  <span class="catalog-user__parts">хочет посетить:</span>
-                  <ul class="catalog-user__countries countries">
-                    <li class="countries__item countries__item--sri-lanka">Шри-ланка</li>
-                    <li class="countries__item countries__item--thailand">Тайланд</li>
-                    <li class="countries__item countries__item--seychelles">Сейшелы</li>
-                  </ul>
-                </div>
-                <div class="catalog-user__transport-container">
-                  <span class="catalog-user__parts">транспорт:</span>
-                  <ul class="catalog-user__transport transport-list">
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--car"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
-                  </ul>
-                </div>
-                <div class="catalog-user__level-container">
-                  <span class="catalog-user__parts">левел:</span>
-                  <span class="catalog-user__level">99</span>
-                </div>
-                <a href="response.html" class="catalog-user__invite">Позвать!</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="catalog__user catalog-user">
-                <a href="profile.html"><img class="catalog-user__img" src="img/demin-mobile@1x.jpg" alt="" width="70" height="70"></a>
-                <a href="profile.html"><h3 class="catalog-user__name">Петя Демин</h3></a>
-                <button class="catalog-user__like"></button>
-                <span class="catalog-user__likes">1500</span>
-                <p class="catalog-user__hashtags tags">#бургер #бар #футбол #концерт #крафт</p>
-                <div class="catalog-user__countries-container">
-                  <span class="catalog-user__parts">хочет посетить:</span>
-                  <ul class="catalog-user__countries countries">
-                    <li class="countries__item countries__item--belgium">Бельгия</li>
-                    <li class="countries__item countries__item--czech">Чехия</li>
-                  </ul>
-                </div>
-                <div class="catalog-user__transport-container">
-                  <span class="catalog-user__parts">транспорт:</span>
-                  <ul class="catalog-user__transport transport-list">
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--car transport-list__item--active"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--foot transport-list__item--active"></li>
-                  </ul>
-                </div>
-                <div class="catalog-user__level-container">
-                  <span class="catalog-user__parts">левел:</span>
-                  <span class="catalog-user__level">80</span>
-                </div>
-                <a href="response.html" class="catalog-user__invite">Позвать!</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="catalog__user catalog-user">
-                <a href="profile.html"><img class="catalog-user__img" src="img/smolov-mobile@1x.jpg" alt="" width="70" height="70"></a>
-                <a href="profile.html"><h3 class="catalog-user__name">Марк Смолов</h3></a>
-                <button class="catalog-user__like"></button>
-                <span class="catalog-user__likes">170</span>
-                <p class="catalog-user__hashtags tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-                <div class="catalog-user__countries-container">
-                  <span class="catalog-user__parts">хочет посетить:</span>
-                  <ul class="catalog-user__countries countries">
-                    <li class="countries__item countries__item--usa">США</li>
-                    <li class="countries__item countries__item--australia">Австралия</li>
-                    <li class="countries__item countries__item--dominicana">Доминикана</li>
-                  </ul>
-                </div>
-                <div class="catalog-user__transport-container">
-                  <span class="catalog-user__parts">транспорт:</span>
-                  <ul class="catalog-user__transport transport-list">
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--car"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle transport-list__item--active"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
-                  </ul>
-                </div>
-                <div class="catalog-user__level-container">
-                  <span class="catalog-user__parts">левел:</span>
-                  <span class="catalog-user__level">25</span>
-                </div>
-                <a href="response.html" class="catalog-user__invite">Позвать!</a>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="catalog__user catalog-user">
-                <a href="profile.html"><img class="catalog-user__img" src="img/rogovaya-mobile@1x.jpg" alt="" width="70" height="70"></a>
-                <a href="profile.html"><h3 class="catalog-user__name">Лариса Роговая</h3></a>
-                <button class="catalog-user__like"></button>
-                <span class="catalog-user__likes">23</span>
-                <p class="catalog-user__hashtags tags">#образование #карьера #учеба #линкедин</p>
-                <div class="catalog-user__countries-container">
-                  <span class="catalog-user__parts">хочет посетить:</span>
-                  <ul class="catalog-user__countries countries">
-                    <li class="countries__item countries__item--uk">Великобритания</li>
-                    <li class="countries__item countries__item--germany">Германия</li>
-                  </ul>
-                </div>
-                <div class="catalog-user__transport-container">
-                  <span class="catalog-user__parts">транспорт:</span>
-                  <ul class="catalog-user__transport transport-list">
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--car transport-list__item--active"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
-                  </ul>
-                </div>
-                <div class="catalog-user__level-container">
-                  <span class="catalog-user__parts">левел:</span>
-                  <span class="catalog-user__level">50</span>
-                </div>
-                <a href="response.html" class="catalog-user__invite">Позвать!</a>
-              </article>
-            </li>
-          </ul>
-          <a href="all-users.html" type="button" class="catalog__more-user">показать еще</a>
-          <div class="catalog__pages">
-            <ul class="catalog__page-numbers">
-              <ul><a class="catalog__page-number catalog__page-number--active" href="#">1</a></ul>
-              <ul><a class="catalog__page-number" href="#">2</a></ul>
-              <ul><a class="catalog__page-number" href="#">3</a></ul>
-              <ul><a class="catalog__page-number" href="#">4</a></ul>
-            </ul>
-            <a href="#" type="button" class="catalog__prev"></a>
-            <a href="#" type="button" class="catalog__next"></a>
+              <input class="choose-companion__send-form" type="submit" value="Показать">
+            </form>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="catalog">
+          <div class="catalog__container">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__user catalog-user">
+                  <a href="profile.html"><img class="catalog-user__img" src="img/firsova-mobile@1x.jpg" alt="" width="70" height="70"></a>
+                  <a href="profile.html"><h3 class="catalog-user__name">Таня Фирсова</h3></a>
+                  <button class="catalog-user__like"></button>
+                  <span class="catalog-user__likes">1,5 М</span>
+                  <p class="catalog-user__hashtags tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                  <div class="catalog-user__countries-container">
+                    <span class="catalog-user__parts">хочет посетить:</span>
+                    <ul class="catalog-user__countries countries">
+                      <li class="countries__item countries__item--sri-lanka">Шри-ланка</li>
+                      <li class="countries__item countries__item--thailand">Тайланд</li>
+                      <li class="countries__item countries__item--seychelles">Сейшелы</li>
+                    </ul>
+                  </div>
+                  <div class="catalog-user__transport-container">
+                    <span class="catalog-user__parts">транспорт:</span>
+                    <ul class="catalog-user__transport transport-list">
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--car"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-user__level-container">
+                    <span class="catalog-user__parts">левел:</span>
+                    <span class="catalog-user__level">99</span>
+                  </div>
+                  <a href="response.html" class="catalog-user__invite">Позвать!</a>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__user catalog-user">
+                  <a href="profile.html"><img class="catalog-user__img" src="img/demin-mobile@1x.jpg" alt="" width="70" height="70"></a>
+                  <a href="profile.html"><h3 class="catalog-user__name">Петя Демин</h3></a>
+                  <button class="catalog-user__like"></button>
+                  <span class="catalog-user__likes">1500</span>
+                  <p class="catalog-user__hashtags tags">#бургер #бар #футбол #концерт #крафт</p>
+                  <div class="catalog-user__countries-container">
+                    <span class="catalog-user__parts">хочет посетить:</span>
+                    <ul class="catalog-user__countries countries">
+                      <li class="countries__item countries__item--belgium">Бельгия</li>
+                      <li class="countries__item countries__item--czech">Чехия</li>
+                    </ul>
+                  </div>
+                  <div class="catalog-user__transport-container">
+                    <span class="catalog-user__parts">транспорт:</span>
+                    <ul class="catalog-user__transport transport-list">
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--car transport-list__item--active"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--foot transport-list__item--active"></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-user__level-container">
+                    <span class="catalog-user__parts">левел:</span>
+                    <span class="catalog-user__level">80</span>
+                  </div>
+                  <a href="response.html" class="catalog-user__invite">Позвать!</a>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__user catalog-user">
+                  <a href="profile.html"><img class="catalog-user__img" src="img/smolov-mobile@1x.jpg" alt="" width="70" height="70"></a>
+                  <a href="profile.html"><h3 class="catalog-user__name">Марк Смолов</h3></a>
+                  <button class="catalog-user__like"></button>
+                  <span class="catalog-user__likes">170</span>
+                  <p class="catalog-user__hashtags tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+                  <div class="catalog-user__countries-container">
+                    <span class="catalog-user__parts">хочет посетить:</span>
+                    <ul class="catalog-user__countries countries">
+                      <li class="countries__item countries__item--usa">США</li>
+                      <li class="countries__item countries__item--australia">Австралия</li>
+                      <li class="countries__item countries__item--dominicana">Доминикана</li>
+                    </ul>
+                  </div>
+                  <div class="catalog-user__transport-container">
+                    <span class="catalog-user__parts">транспорт:</span>
+                    <ul class="catalog-user__transport transport-list">
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--car"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle transport-list__item--active"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-user__level-container">
+                    <span class="catalog-user__parts">левел:</span>
+                    <span class="catalog-user__level">25</span>
+                  </div>
+                  <a href="response.html" class="catalog-user__invite">Позвать!</a>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__user catalog-user">
+                  <a href="profile.html"><img class="catalog-user__img" src="img/rogovaya-mobile@1x.jpg" alt="" width="70" height="70"></a>
+                  <a href="profile.html"><h3 class="catalog-user__name">Лариса Роговая</h3></a>
+                  <button class="catalog-user__like"></button>
+                  <span class="catalog-user__likes">23</span>
+                  <p class="catalog-user__hashtags tags">#образование #карьера #учеба #линкедин</p>
+                  <div class="catalog-user__countries-container">
+                    <span class="catalog-user__parts">хочет посетить:</span>
+                    <ul class="catalog-user__countries countries">
+                      <li class="countries__item countries__item--uk">Великобритания</li>
+                      <li class="countries__item countries__item--germany">Германия</li>
+                    </ul>
+                  </div>
+                  <div class="catalog-user__transport-container">
+                    <span class="catalog-user__parts">транспорт:</span>
+                    <ul class="catalog-user__transport transport-list">
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--car transport-list__item--active"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-user__level-container">
+                    <span class="catalog-user__parts">левел:</span>
+                    <span class="catalog-user__level">50</span>
+                  </div>
+                  <a href="response.html" class="catalog-user__invite">Позвать!</a>
+                </article>
+              </li>
+            </ul>
+            <a href="all-users.html" type="button" class="catalog__more-user">показать еще</a>
+            <div class="catalog__pages">
+              <ul class="catalog__page-numbers">
+                <ul><a class="catalog__page-number catalog__page-number--active" href="#">1</a></ul>
+                <ul><a class="catalog__page-number" href="#">2</a></ul>
+                <ul><a class="catalog__page-number" href="#">3</a></ul>
+                <ul><a class="catalog__page-number" href="#">4</a></ul>
+              </ul>
+              <a href="#" type="button" class="catalog__prev"></a>
+              <a href="#" type="button" class="catalog__next"></a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
