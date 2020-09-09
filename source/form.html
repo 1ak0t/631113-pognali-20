@@ -44,17 +44,17 @@
     <main>
       <section class="profile">
         <div class="profile__container">
-          <div class="profile__photo-container">
-            <div class="profile__level"></div>
-            <img class="profile__photo" src="img/demin-desktop@1x.jpg" alt="" width="100" height="100">
+          <div class="profile__level"></div>
+          <img class="profile__photo" src="img/demin-desktop@1x.jpg" alt="" width="100" height="100">
+          <div class="profile__button-container">
             <a class="profile__change-photo profile__change-photo--mobile" href="#">Сменить фото</a>
             <a class="profile__change-photo profile__change-photo--desktop" href="#">Фото</a>
           </div>
-          <div class="profile__wrapper">
+          <div class="profile__tags-container">
             <span>Тэги</span>
             <textarea class="profile__hashtags" >#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
-          <div class="profile__wrapper">
+          <div class="profile__transport-container">
             <span>Транспорт</span>
             <ul class="profile__transport transport-list">
               <li class="transport-list__item transport-list__item--airplane transport-list__item--active"></li>
@@ -71,7 +71,8 @@
           <ul class="plans__list">
             <li>
               <div class="plans__card">
-                <h3 class="plans_country">1. Франция, Италия</h3>
+                <span class="plans__country-number">1.</span>
+                <h3 class="plans_country">Франция, Италия</h3>
                 <span class="plans__travelers">3 попутчика</span>
                 <span class="plans__date">26 мар - 29 мар</span>
                 <a href="#" class="plans__change">Изменить</a>
@@ -79,7 +80,8 @@
             </li>
             <li>
               <div class="plans__card">
-                <h3 class="plans_country">2. Таиланд, Индонезия</h3>
+                <span class="plans__country-number">2.</span>
+                <h3 class="plans_country">Таиланд, Индонезия</h3>
                 <span class="plans__travelers">1 попутчик</span>
                 <span class="plans__date">1 июл - 15 июл</span>
                 <a href="#" class="plans__change">Изменить</a>
@@ -213,9 +215,9 @@
               <textarea name="BaG" id="BaG" cols="30" rows="10" placeholder="План действий"></textarea>
               <label for="Czech">Чехия</label>
               <textarea name="Czech" id="Czech" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <button class="add-plan__send" type="submit">Отправить</button>
+              <a href="#step-2">На шаг назад</a>
             </div>
-            <button class="add-plan__send" type="submit">Отправить</button>
-            <a href="#step-2">На шаг назад</a>
           </form>
         </div>
       </section>
