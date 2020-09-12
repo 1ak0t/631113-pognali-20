@@ -1,7 +1,6 @@
 .countries-list__item {
-  margin-bottom: -5px;
-  
   @media (min-width: $tablet-width) {
     margin-bottom: 11px;
   }
+  margin-bottom: -5px;
 }

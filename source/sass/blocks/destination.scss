@@ -42,7 +42,7 @@
 }
 
 .destination__prologue {
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 79px;
   }
 
@@ -103,7 +103,7 @@
   margin-top: 15px;
 
   @media (min-width: $tablet-width) {
-    background-position-x: 94,5%;
+    background-position-x: 94%;
   }
 
   @media (min-width: $desktop-width) {

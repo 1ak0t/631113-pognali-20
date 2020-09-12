@@ -93,11 +93,11 @@
   width: 25px;
   height: 25px;
   background-color: transparent;
-  cursor: pointer ;
+  cursor: pointer;
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 3px;
@@ -121,7 +121,6 @@
 }
 
 .page-header__bottom {
-
   @media (min-width: $tablet-width) {
     display: grid;
     justify-content: space-between;
