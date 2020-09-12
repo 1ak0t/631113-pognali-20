@@ -1,12 +1,27 @@
 .description {
   font-weight: 300;
-
-  &--bold {
-    font-weight: bold;
-  }
+  line-height: 22px;
+  margin-top: -1px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
+    padding-right: 15px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+
+  &--bold {
+    font-weight: bold;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 51px;
+    }
   }
 }

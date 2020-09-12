@@ -4,16 +4,51 @@
   position: relative;
   padding-bottom: 23px;
 
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    border-radius: 20px;
+    padding-bottom: 29px;
+  }
+
   img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 285px;
+      height: 285px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
   }
 }
 
-.user__level {
+.user__level-container {
   position: absolute;
   top: 17px;
   left: 17px;
+  padding-top: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 21px;
+  }
+}
+
+.user__lvl {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.user__lvl-word {
+  font-size: 14px;
+  display: block;
 }
 
 .user__name {
@@ -22,22 +57,38 @@
   font-weight: bold;
   color: $basic-blue-light;
   text-align: center;
+  margin-top: -3px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    margin-top: 2px;
+    text-align: left;
+    padding-left: 68px;
+    margin-bottom: 24px;
+  }
 }
 
 .user__countries {
-  display: flex;
-
-  @include clear-list;
+  
 }
 
 .user__hashtags {
   width: 200px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
 }
 
 .user__transport {
   @include clear-list;
   margin: 0 auto;
   margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+  }
 }

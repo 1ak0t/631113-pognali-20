@@ -1,6 +1,10 @@
 .address {
   background-color: $basic-yellow;
-  border-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  top: -150px;
+  z-index: 5;
 }
 
 .address__container {

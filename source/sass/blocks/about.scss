@@ -1,13 +1,27 @@
 .about {
   background: $header-steps-bg;
   color: $basic-white;
-  border-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
 }
 
 .about__container {
   @include width($mobile-width);
+  height: 632px;
   background: $header-steps-bg url("../img/about-mobile@1x.png") center bottom no-repeat;
-  padding: 72px 60px 82px 49px;
+  padding: 293px 60px 82px 49px;
   display: grid;
 
   .about__link {
@@ -17,19 +31,58 @@
     @media (max-width: $tablet-width) {
       display: none;
     }
+
+    @media (min-width: $tablet-width) {
+      background-position-x: 86%;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 84px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     @include width ($tablet-width);
     background: $header-steps-bg;
-    grid-template-columns: 309px 1fr;
+    grid-template-columns: 317px 1fr;
     padding-left: 75px;
     padding-right: 75px;
+    height: auto;
+    padding-top: 344px;
+    padding-bottom: 89px;
   }
 
   @media (min-width: $desktop-width) {
     @include width ($desktop-width);
-    grid-template-columns: 619px 1fr;
+    grid-template-columns: 626px 1fr;
+    padding-top: 58px;
+    padding-left: 130px;
+    padding-bottom: 0;
+    background-color: transparent;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+  }
+
+  .description--bold {
+    @media (min-width: $desktop-width) {
+      width: 420px;
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
   }
 }
 
@@ -39,6 +92,9 @@
   &--tablet {
     @media (min-width: $tablet-width) {
       display: inline-block;
+      position: relative;
+      top: 33px;
+      right: 8px;
     }
 
     @media (min-width: $desktop-width) {
@@ -49,6 +105,8 @@
   &--desktop {
     @media (min-width: $desktop-width) {
       display: inline-block;
+      position: relative;
+      left: -6px;
     }
   }
 }

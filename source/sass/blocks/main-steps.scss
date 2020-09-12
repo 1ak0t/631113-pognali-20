@@ -19,22 +19,111 @@
     padding-left: 24px;
     padding-right: 96px;
     padding-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 31px;
+      font-size: 24px;
+      line-height: 24px;
+      padding-left: 34px;
+    }
   }
 
   &--1 {
     background-color: $basic-orange;
+
+    @media (min-width: $tablet-width) {
+      height: 140px;
+      width: 365px;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 345px;
+      height: 107px;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
   }
 
   &--2 {
     background-color: $main-step-bg-2;
+
+    @media (max-width: $tablet-width) {
+      position: relative;
+      top: -80px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 140px;
+      width: 344px;
+      position: relative;
+      left: -21px;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 345px;
+      height: 107px;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      left: -30px;
+    }
   }
 
   &--3 {
     background-color: $basic-yellow-dark;
+
+    @media (max-width: $tablet-width) {
+      position: relative;
+      top: -160px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 140px;
+      width: 365px;
+      border-radius: 0;
+      border-bottom-left-radius: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 345px;
+      height: 107px;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      left: -30px;
+    }
   }
 
   &--4 {
     background-color: $basic-yellow;
     height: 80px;
+
+    @media (max-width: $tablet-width) {
+      position: relative;
+      top: -240px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 140px;
+      width: 344px;
+      position: relative;
+      left: -21px;
+      border-radius: 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 345px;
+      height: 107px;
+      border-radius: 20px;
+      left: -30px;
+    }
   }
 }

@@ -1,6 +1,10 @@
 .registration {
   background-color: $header-steps-bg;
-  border-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  top: -120px;
+  z-index: 6;
 }
 
 .registration__container {
