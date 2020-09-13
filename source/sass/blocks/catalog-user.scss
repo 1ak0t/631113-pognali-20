@@ -155,18 +155,18 @@
   &::before {
     content: "";
     display: block;
-    width:15px;
+    width: 15px;
     height: 1px;
     position: absolute;
     top: 7px;
     left: -18px;
     background-color: $destination-bg;
-  } 
+  }
 
   &::after {
     content: "";
     display: block;
-    width:138px;
+    width: 138px;
     height: 1px;
     position: absolute;
     top: 7px;
@@ -228,7 +228,6 @@
 }
 
 .catalog-user__level-container {
-  
   @media (min-width: $tablet-width) {
     position: relative;
     top: 0;
