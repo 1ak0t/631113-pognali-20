@@ -26,8 +26,9 @@
   &--free {
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: 226px;
+      top: 256px;
       right: 74px;
+      z-index: 3;
     }
 
     @media (min-width: $desktop-width) {
@@ -39,8 +40,9 @@
   &--first {
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: 293px;
+      top: 323px;
       right: 74px;
+      z-index: 3;
     }
 
     @media (min-width: $desktop-width) {
@@ -52,8 +54,9 @@
   &--color {
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: 359px;
+      top: 389px;
       right: 74px;
+      z-index: 3;
     }
 
     @media (min-width: $desktop-width) {

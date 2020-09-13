@@ -11,7 +11,7 @@
   @include width($mobile-width);
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 46px;
+  padding-bottom: 76px;
 
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
@@ -45,6 +45,20 @@
   text-transform: uppercase;
   color: $basic-blue-light;
   margin-bottom: 18px;
+  margin-top: 19px;
+  margin-left: 31px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background: url("../img/show-more-plus.svg") center center no-repeat;
+    position: absolute;
+    left: 25px;
+    top: 0px;
+    background-size: 16px;
+  }
 }
 
 .catalog__pages {
