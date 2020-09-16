@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="page-header__title-container">
-          <h1 class="page-header__title">Попутчики</h1>
+          <h1 class="page-header__title">Направления</h1>
         </div>
       </div>
     </header>
@@ -72,7 +72,7 @@
             <li>
               <div class="plans__card">
                 <span class="plans__country-number">1.</span>
-                <h3 class="plans_country">Франция, Италия</h3>
+                <h3 class="plans__country">Франция, Италия</h3>
                 <span class="plans__travelers">3 попутчика</span>
                 <span class="plans__date">26 мар - 29 мар</span>
                 <a href="#" class="plans__change">Изменить</a>
@@ -81,7 +81,7 @@
             <li>
               <div class="plans__card">
                 <span class="plans__country-number">2.</span>
-                <h3 class="plans_country">Таиланд, Индонезия</h3>
+                <h3 class="plans__country">Таиланд, Индонезия</h3>
                 <span class="plans__travelers">1 попутчик</span>
                 <span class="plans__date">1 июл - 15 июл</span>
                 <a href="#" class="plans__change">Изменить</a>
@@ -98,24 +98,24 @@
           <div class="add-plan__step-dots"></div>
           <form action="https://echo.htmlacademy.ru" class="add-plan__form" method="POST">
             <div class="add-plan__step step-card" id="step-1">
-              <h3 class="step-card__title">Шаг 1. Даты пребывания</h3>
+              <h3 class="step-card__title">Шаг 1.<br> Даты пребывания</h3>
               <p class="step-card__description description">
                 Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
               </p>
-              <label for="peoples">Ищу попутчиков</label>
+              <label class="step-card__people" for="peoples">Ищу попутчиков</label>
               <div class="step-card__counter">
                 <button type="button">-</button>
                 <input type="number" name="peoples" id="peoples" value="2" required>
                 <button type="button">+</button>
               </div>
-              <label for="duration">Длительность</label>
+              <label class="step-card__duration" for="duration">Длительность</label>
               <div class="step-card__counter">
                 <button type="button">-</button>
                 <input type="number" name="duration" id="duration" value="2" required>
                 <button type="button">+</button>
               </div>
-              <input type="checkbox" name="child-with">
-              <label for="">Можно с детьми</label>
+              <input class="step-card__child" type="checkbox" name="child-with" id="child-with">
+              <label class="step-card__child-label" for="child-with">Можно с детьми</label>
               <div class="step-card__calendar calendar">
                 <div class="calendar__month">
                   <button type="button">&lt;</button>
@@ -128,8 +128,8 @@
                   <li>С</li>
                   <li>Ч</li>
                   <li>П</li>
-                  <li class="calendar__weekdays calendar__weekdays--red">С</li>
-                  <li class="calendar__weekdays calendar__weekdays--red">В</li>
+                  <li class="calendar__holyday">С</li>
+                  <li class="calendar__holyday">В</li>
                 </ul>
                 <ul class="calendar__days">
                   <li class="calendar__day calendar__day--inactive">23</li>
@@ -179,44 +179,45 @@
               </div>
             </div>
             <div class="add-plan__step step-card" id="step-2">
-              <h3 class="step-card__title">Шаг 2. Маршрут</h3>
+              <h3 class="step-card__title">Шаг 2.<br>Маршрут</h3>
               <p class="step-card__description description">
                 Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
               </p>
               <div class="step-card__countries">
-                <select name="step-countries" id="step-countries" required>
+                <select class="step-card__countries-place" name="step-countries" id="step-countries" required>
                   <option value="choose" disabled selected>Выберите страну</option>
                   <option value="BaG">Босния и Герцеговина</option>
                   <option value="Czech">Чехия</option>
                   <button type="button">Добавьте страну</button>
                 </select>
-                <select name="step-countries" id="step-countries">
+                <select class="step-card__countries-place" name="step-countries" id="step-countries">
                   <option value="choose" disabled selected>Выберите страну</option>
                   <option value="BaG">Босния и Герцеговина</option>
                   <option value="Czech">Чехия</option>
                   <button type="button">Добавьте страну</button>
                 </select>
-                <select name="step-countries" id="step-countries">
+                <select class="step-card__countries-place" name="step-countries" id="step-countries">
                   <option value="choose" disabled selected>Выберите страну</option>
                   <option value="BaG">Босния и Герцеговина</option>
                   <option value="Czech">Чехия</option>
                   <button type="button">Добавьте страну</button>
                 </select>
+                <button class="step-card__countries-place">Добавить страну</button>
               </div>
               <a href="#step-3" class="step-card__button">Следующий шаг</a>
-              <a href="#step-1">На шаг назад</a>
+              <a class="step-card__prev" href="#step-1">На шаг назад</a>
             </div>
             <div class="add-plan__step step-card" id="step-3">
-              <h3 class="step-card__title">Шаг 3. Развлечения</h3>
+              <h3 class="step-card__title">Шаг 3.<br>Развлечения</h3>
               <p class="step-card__description description">
                 Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.
               </p>
-              <label for="BaG">Босния и Герцеговина</label>
-              <textarea name="BaG" id="BaG" cols="30" rows="10" placeholder="План действий"></textarea>
-              <label for="Czech">Чехия</label>
-              <textarea name="Czech" id="Czech" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-              <button class="add-plan__send" type="submit">Отправить</button>
-              <a href="#step-2">На шаг назад</a>
+              <label class="step-card__country3" for="BaG">Босния и Герцеговина</label>
+              <textarea class="step-card__country3-descr" name="BaG" id="BaG" cols="30" rows="10" placeholder="План действий"></textarea>
+              <label class="step-card__country3" for="Czech">Чехия</label>
+              <textarea class="step-card__country3-descr" name="Czech" id="Czech" cols="30" rows="10">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <button class="add-plan__send step-card__button" type="submit">Отправить</button>
+              <a class="step-card__prev" href="#step-2">На шаг назад</a>
             </div>
           </form>
         </div>

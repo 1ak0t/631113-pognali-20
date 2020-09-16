@@ -29,5 +29,23 @@
     top: -3px;
     left: 7px;
     background: $basic-black;
+
+    @media (min-width: $tablet-width) {
+      width: 35px;
+      height: 24px;
+      top: -4px;
+      left: 1px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-right: 26px;
+    margin-bottom: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 52px;
+    margin-bottom: 16px;
   }
 }

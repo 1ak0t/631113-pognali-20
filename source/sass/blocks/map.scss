@@ -1,0 +1,12 @@
+.map__container {
+  height: 322px;
+  margin-top: -30px;
+
+  @media (min-width: $tablet-width) {
+    height: 543px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 475px;
+  }
+}

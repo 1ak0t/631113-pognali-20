@@ -1,6 +1,10 @@
 .choose-companion {
   background-color: $destination-bg;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -13,26 +17,66 @@
   padding: 26px 25px 22px 25px;
   margin-bottom: 28px;
   border-radius: 20px;
-  height: 624px;
 
-  @media (min-width: $tablet-width) {
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     @include width(($tablet-width)-80);
+    height: 550px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (min-width: $desktop-width) {
     @include width(285px);
+    padding-left: 47px;
+    padding-right: 48px;
+    padding-top: 47px;
   }
 }
 
 .choose-companion__title {
   color: $basic-blue-light;
-  font-size: 22px;
+  font-size: 23px;
   line-height: 22px;
   font-weight: bold;
   width: 145px;
+  margin-top: 1px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 100%;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+.choose-companion__form {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-top: 28px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.choose-companion__form-tablet-border {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    border-bottom: 1px solid $choose-companion-border;
+    border-top: 1px solid $choose-companion-border;
+    padding-top: 28px;
+    padding-bottom: 13px;
   }
 }
 
@@ -41,4 +85,240 @@
   line-height: 18px;
   color: $basic-blue-light;
   text-transform: uppercase;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border-top: 1px solid $choose-companion-border;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 16px;
+    right: -1px;
+    background: url("../img/dropdown.svg") center center no-repeat;
+    transform: rotate(180deg);
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--inactive::after {
+    transform: rotate(360deg);
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    border: 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: 0;
+    padding-bottom: 12px;
+  }
+}
+
+.choose-companion__hobby,
+.choose-companion__music,
+.choose-companion__food,
+.choose-companion__transport,
+.choose-companion__level {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
+
+.choose-companion__hobby-box,
+.choose-companion__music-box,
+.choose-companion__food-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &--inactive {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 13px;
+    margin-left: 27px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      margin-left: 37px;
+      display: block;
+      width: 133px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 18px;
+      margin-left: 36px;
+    }
+  }
+
+  input + label::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: $basic-white center center no-repeat;
+    background-size: 10px;
+    position: absolute;
+    left: -27px;
+    top: -3px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 24px;
+      height: 24px;
+      left: -37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 24px;
+      height: 24px;
+      left: -36px;
+    }
+  }
+
+  input:checked + label::before {
+    background-image: url("../img/tick.svg");
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 126px;
+    margin-top: 6px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+  }
+}
+
+.choose-companion__transport {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .choose-companion__toggle {
+      position: relative;
+      top: 12px;
+    }
+  }
+}
+
+.choose-companion__level {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .choose-companion__toggle {
+      position: relative;
+      top: -11px;
+    }
+  }
+}
+
+.choose-companion__transport-box {
+  display: flex;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    position: relative;
+    left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 0;
+    left: -4px;
+    padding-bottom: 4px;
+  }
+}
+
+.choose-companion__airbus,
+.choose-companion__car,
+.choose-companion__cycle,
+.choose-companion__walk {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background-color: $basic-white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.choose-companion__airbus {
+  background: $basic-white url("../img/plane.svg") center center no-repeat;
+  background-size: 17px;
+}
+
+.choose-companion__car {
+  background: $basic-white url("../img/bus.svg") center center no-repeat;
+  background-size: 17px;
+}
+
+.choose-companion__cycle {
+  background: $basic-white url("../img/bike.svg") center center no-repeat;
+  background-size: 17px;
+}
+
+.choose-companion__walk {
+  background: $basic-white url("../img/run.svg") center center no-repeat;
+  background-size: 17px;
+}
+
+.choose-companion__send-form {
+  width: 230px;
+  height: 40px;
+  border: 0;
+  padding: 0;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-left: -5px;
+  background-color: $basic-white;
+  font: inherit;
+  font-size: 18px;
+  padding-top: 3px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $basic-blue;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 35px;
+    border-radius: 30px;
+    font-size: 22px;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 194px;
+    height: 49px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 0;
+    margin-top: 43px;
+    margin-bottom: 26px;
+  }
 }

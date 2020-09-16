@@ -5,6 +5,12 @@
   border-top-right-radius: 30px;
   position: relative;
   margin-top: -30px;
+
+  @media (min-width: $tablet-width) {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: -50px;
+  }
 }
 
 .page-footer__container {
@@ -17,10 +23,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    padding-left: 42px;
+    padding-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
     @include width($desktop-width);
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -60,8 +71,19 @@
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -13px;
+    left: 0;
+    font-size: 20px;
+  }
 }
 
 .page-footer__copyright-text {
   padding-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
 }

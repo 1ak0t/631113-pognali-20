@@ -10,13 +10,20 @@
 
 .page__main-catalog {
   background-color: $destination-bg;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+    padding-top: 50px;
+    position: relative;
+    z-index: -1;
+  }
 }
 
 .page__catalog-container {
   @media (min-width: $desktop-width) {
     @include width($desktop-width);
     display: grid;
-    grid-template-columns: 1035px 285px;
+    grid-template-columns: 1035px 405px;
   }
 }
 

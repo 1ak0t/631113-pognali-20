@@ -5,6 +5,18 @@
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    margin-top: 8px;
+    margin-right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 11px;
+    margin-right: 22px;
+    margin-left: -25px;
+  }
 }
 
 .social-list__item {
@@ -15,5 +27,10 @@
 
   &--yellow {
     background-color: $basic-yellow;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
   }
 }

@@ -2,11 +2,14 @@
   background-color: $special-blue-light;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  position: relative;
+  margin-top: -20px;
+  z-index: 11;
 }
 
 .plans__container {
   @include width($mobile-width);
-  padding: 28px 25px 59px 25px;
+  padding: 8px 25px 41px 25px;
 
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
@@ -15,6 +18,10 @@
   @media (min-width: $desktop-width) {
     @include width($desktop-width);
   }
+}
+
+.plans__title {
+  margin-bottom: 29px;
 }
 
 .plans__list {
@@ -29,7 +36,7 @@
   color: $basic-blue;
   display: grid;
   grid-template-columns: 20px 1fr;
-  align-items: center;
+  align-items: start;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);
@@ -58,6 +65,9 @@
 .plans__country {
   grid-column: 2/3;
   grid-row: 1/2;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
@@ -73,6 +83,7 @@
 .plans__travelers {
   grid-column: 1/3;
   grid-row: 2/3;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -88,6 +99,7 @@
 .plans__date {
   grid-column: 1/3;
   grid-row: 3/4;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;

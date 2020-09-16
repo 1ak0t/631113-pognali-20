@@ -5,6 +5,12 @@
   &--inner {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+
+    @media (min-width: $tablet-width) {
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+      height: 350px;
+    }
   }
 }
 
@@ -24,6 +30,10 @@
     @include width ($desktop-width);
     background: url("../img/globe-back-desktop@1x.jpg") center top no-repeat;
     padding: 0;
+
+    &--inner {
+      background: none;
+    }
   }
 }
 
@@ -62,7 +72,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      background-color: $basic-blue-dark;
+      background-color: $basic-header;
     }
   }
 }
@@ -142,20 +152,41 @@
 }
 
 .page-header__title-container {
-  a {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
-    padding-right: 75px;
+    padding-right: 134px;
     padding-left: 75px;
+    padding-top: 98px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+  }
 
-    a {
-      color: $basic-white;
-      display: inline-block;
+  @media (min-width: $desktop-width) {
+    padding-right: 183px;
+    padding-left: 127px;
+  }
+}
+
+.page-header__return {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: bold;
+    color: $basic-white;
+    display: block;
+    position: relative;
+    top: -8px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 16px;
+      position: absolute;
+      top: 2px;
+      left: 144px;
+      background: url("../img/return.svg") center center no-repeat;
     }
   }
 }
@@ -168,14 +199,15 @@
   border-bottom: 4px solid $basic-orange;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 67px;
+    padding-bottom: 72px;
+    font-size: 60px;
+    border-bottom: 8px solid $basic-orange;
   }
 
   &--index {
     display: block;
     width: 238px;
     margin: 0 auto;
-    margin-bottom: 7px;
     text-align: center;
     line-height: 40px;
     border: 0;
