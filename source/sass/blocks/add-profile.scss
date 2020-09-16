@@ -57,8 +57,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 198px;
+    height: 198px;
     grid-column: 3/4;
     grid-row: 2/3;
+    top: 26px;
+    left: -22px;
   }
 }
 
@@ -82,7 +86,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/4;
-    align-self: start;
+    align-self: flex-start;
     margin-top: 7px;
   }
 }
@@ -202,7 +206,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 191px;
     padding-top: 28px;
-    align-self: start;
+    align-self: flex-start;
 
     &::before {
       top: 6px;

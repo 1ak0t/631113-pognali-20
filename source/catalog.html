@@ -9,11 +9,11 @@
     <header class="page-header page-header--inner">
       <div class="page-header__container page-header__container--inner">
         <div class="page-header__top page-header__top--inner">
-          <div class="page-header__logo-container">
-            <img class="page-header__logo page-header__logo--mobile" src="img/logo-mobile-white@1x.png" alt="" width="100" height="19">
-            <img class="page-header__logo page-header__logo--tablet" src="img/logo-tablet-white@1x.png" alt="" width="164" height="42">
-            <img class="page-header__logo page-header__logo--desktop" src="img/logo-desktop-white@1x.png" alt="" width="200" height="52">
-          </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <img class="page-header__logo" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="" width="100" height="19">
+          </picture>
           <button class="page-header__toggle"></button>
           <nav class="main-nav">
             <ul class="main-nav__list menu-list">
@@ -183,7 +183,13 @@
             <ul class="catalog__list">
               <li class="catalog__item">
                 <article class="catalog__user catalog-user">
-                  <a href="profile.html"><img class="catalog-user__img" src="img/firsova-mobile@1x.jpg" alt="" width="70" height="70"></a>
+                  <a href="profile.html">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                      <img class="catalog-user__img" src="img/firsova-mobile@1x.jpg" srcset="iimg/firsova-mobile@2x.jpg 2x" alt="" width="70" height="70">
+                    </picture>
+                  </a>
                   <a href="profile.html"><h3 class="catalog-user__name">Таня Фирсова</h3></a>
                   <button class="catalog-user__like"></button>
                   <span class="catalog-user__likes">1,5 М</span>
@@ -216,7 +222,13 @@
               </li>
               <li class="catalog__item">
                 <article class="catalog__user catalog-user">
-                  <a href="profile.html"><img class="catalog-user__img" src="img/demin-mobile@1x.jpg" alt="" width="70" height="70"></a>
+                  <a href="profile.html">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                      <img class="catalog-user__img" src="img/demin-mobile@1x.jpg" srcset="iimg/demin-mobile@2x.jpg 2x" alt="" width="70" height="70">
+                    </picture>
+                  </a>
                   <a href="profile.html"><h3 class="catalog-user__name">Петя Демин</h3></a>
                   <button class="catalog-user__like"></button>
                   <span class="catalog-user__likes">1500</span>
@@ -248,7 +260,13 @@
               </li>
               <li class="catalog__item">
                 <article class="catalog__user catalog-user">
-                  <a href="profile.html"><img class="catalog-user__img" src="img/smolov-mobile@1x.jpg" alt="" width="70" height="70"></a>
+                  <a href="profile.html">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                      <img class="catalog-user__img" src="img/smolov-mobile@1x.jpg" srcset="iimg/smolov-mobile@2x.jpg 2x" alt="" width="70" height="70">
+                    </picture>
+                  </a>
                   <a href="profile.html"><h3 class="catalog-user__name">Марк Смолов</h3></a>
                   <button class="catalog-user__like"></button>
                   <span class="catalog-user__likes">170</span>
@@ -281,7 +299,13 @@
               </li>
               <li class="catalog__item">
                 <article class="catalog__user catalog-user">
-                  <a href="profile.html"><img class="catalog-user__img" src="img/rogovaya-mobile@1x.jpg" alt="" width="70" height="70"></a>
+                  <a href="profile.html">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                      <img class="catalog-user__img" src="img/rogovaya-mobile@1x.jpg" srcset="iimg/rogovaya-mobile@2x.jpg 2x" alt="" width="70" height="70">
+                    </picture>
+                  </a>
                   <a href="profile.html"><h3 class="catalog-user__name">Лариса Роговая</h3></a>
                   <button class="catalog-user__like"></button>
                   <span class="catalog-user__likes">23</span>
@@ -329,11 +353,11 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <div class="page-footer__logo-container">
-          <img class="page-footer__logo page-footer__logo--mobile" src="img/logo-mobile-blue@1x.png" alt="" width="100" height="19">
-          <img class="page-footer__logo page-footer__logo--tablet" src="img/logo-tablet-blue@1x.png" alt="" width="164" height="42">
-          <img class="page-footer__logo page-footer__logo--desktop" src="img/logo-desktop-blue@1x.png" alt="" width="200" height="55">
-        </div>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x" width="">
+          <img class="page-footer__logo" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="" width="100" height="19">
+        </picture>
         <ul class="page-footer__social social-list">
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>

@@ -36,30 +36,14 @@
 }
 
 .page-footer__logo {
-  display: none;
-
-  &--mobile {
-    display: inline-block;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    height: 42px;
   }
 
-  &--tablet {
-    @media (min-width: $tablet-width) {
-      display: inline-block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    @media (min-width: $desktop-width) {
-      display: inline-block;
-    }
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 55px;
   }
 }
 
