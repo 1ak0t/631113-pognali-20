@@ -90,6 +90,9 @@
 }
 
 .page-header__logo {
+  width: 100px;
+  height: 19px;
+
   @media (min-width: $tablet-width) {
     width: 166px;
     height: 42px;
@@ -236,6 +239,8 @@
 .page-header__man {
   position: relative;
   display: inline-block;
+  width: 192px;
+  height: 255px;
   left: 55px;
 
   @media (min-width: $tablet-width) {
