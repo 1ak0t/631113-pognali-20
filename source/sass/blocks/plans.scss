@@ -36,7 +36,7 @@
   color: $basic-blue;
   display: grid;
   grid-template-columns: 20px 1fr;
-  align-items: start;
+  align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);

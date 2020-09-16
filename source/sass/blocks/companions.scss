@@ -23,6 +23,14 @@
 .companions__container {
   @include width($mobile-width);
   padding: 76px 25px 29px 25px;
+  background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 143px 143px, 64px 71px;
+  background-position: 152px 69px, 0 341px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-desktop@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
@@ -30,6 +38,8 @@
     padding-left: 75px;
     padding-top: 154px;
     padding-bottom: 87px;
+    background-size: 143px 143px, 285px 285px;
+    background-position: 40px 468px, 409px 122px;
 
     .companions__link {
       width: 100%;
@@ -45,6 +55,7 @@
     padding-bottom: 125px;
     display: grid;
     grid-template-columns: 570px 1fr;
+    background-position: 547px 184px, 190px 436px;
 
     .companions__link {
       width: 281px;

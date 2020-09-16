@@ -1,6 +1,12 @@
 .country {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row-reverse;
+    height: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
   }
 }
 
@@ -87,7 +93,7 @@
   grid-column: 1/3;
   padding-top: 3px;
   padding-right: 60px;
-  align-self: start;
+  align-self: flex-start;
   min-height: 34px;
 
   @media (min-width: $tablet-width) {
@@ -102,25 +108,11 @@
 .country__img {
   border-radius: 10px;
 
-  &--mobile {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $tablet-width) {
-      border-radius: 0;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
-    order: 2;
+    width: 186px;
+    height: 140px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }

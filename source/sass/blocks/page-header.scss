@@ -20,16 +20,28 @@
   padding: 0 25px;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/globe-back-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     @include width ($tablet-width);
     background: url("../img/globe-back-tablet@1x.jpg") center 382px no-repeat;
     padding: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/globe-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     @include width ($desktop-width);
     background: url("../img/globe-back-desktop@1x.jpg") center top no-repeat;
     padding: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/globe-back-desktop@2x.jpg");
+    }
 
     &--inner {
       background: none;
@@ -40,7 +52,7 @@
 .page-header__top {
   height: 95px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   padding-top: 28px;
   position: relative;
@@ -78,30 +90,17 @@
 }
 
 .page-header__logo {
-  display: none;
+  width: 100px;
+  height: 19px;
 
-  &--mobile {
-    display: inline-block;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
   }
 
-  &--tablet {
-    @media (min-width: $tablet-width) {
-      display: inline-block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    @media (min-width: $desktop-width) {
-      display: inline-block;
-    }
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
   }
 }
 
@@ -239,37 +238,23 @@
 
 .page-header__man {
   position: relative;
-  display: none;
+  display: inline-block;
+  width: 192px;
+  height: 255px;
+  left: 55px;
 
-  &--mobile {
-    display: inline-block;
-    left: 55px;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    width: 372px;
+    height: 451px;
+    top: -42px;
+    left: -100px;
   }
 
-  &--tablet {
-    @media (min-width: $tablet-width) {
-      display: inline-block;
-      position: relative;
-      top: -42px;
-      left: -100px;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    @media (min-width: $desktop-width) {
-      display: inline-block;
-      position: relative;
-      top: -22px;
-      left: 59px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 431px;
+    height: 640px;
+    top: -22px;
+    left: 59px;
   }
 }
 
@@ -309,7 +294,7 @@
   position: relative;
   left: -25px;
   width: 320px;
-  padding: 44px 109px 109px 50px;
+  padding: 49px 109px 109px 50px;
   margin: 0;
   box-sizing: border-box;
 
