@@ -6,13 +6,13 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__container">
+    <header class="page-header page-header--inner">
+      <div class="page-header__container page-header__container--inner">
         <div class="page-header__top page-header__top--inner">
           <div class="page-header__logo-container">
             <img class="page-header__logo page-header__logo--mobile" src="img/logo-mobile-white@1x.png" alt="" width="100" height="19">
             <img class="page-header__logo page-header__logo--tablet" src="img/logo-tablet-white@1x.png" alt="" width="164" height="42">
-            <img class="page-header__logo page-header__logo--desktop" src="img/logo-desktop-white@1x.png" alt="" width="164" height="42">
+            <img class="page-header__logo page-header__logo--desktop" src="img/logo-desktop-white@1x.png" alt="" width="200" height="52">
           </div>
           <button class="page-header__toggle"></button>
           <nav class="main-nav">
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="page-header__title-container">
-          <h1 class="page-header__title">Попутчики</h1>
+          <h1 class="page-header__title page-header__title--inner">Попутчики</h1>
           <a href="" class="page-header__return">НА ГЛАВНУЮ</a>
         </div>
       </div>
@@ -46,13 +46,18 @@
       <div class="page__catalog-container">
         <section class="filter">
           <div class="filter__container">
-            <span class="filter__title">Фильтр по странам:</span>
-            <div class="filter__invis">
+            <div class="filter__top">
+              <span class="filter__title">Фильтрация по странам</span>
+              <div class="filter__countries">
+                <button class="filter__continent  filter__continent--active">Европа</button>
+                <button class="filter__continent">Азия</button>
+                <button class="filter__continent">Америка</button>
+                <button class="filter__continent">Острова</button>
+              </div>
               <button class="filter__toggle"></button>
-              <button class="filter__continent">Европа</button>
-              <button class="filter__continent">Азия</button>
-              <button class="filter__continent">Америка</button>
-              <button class="filter__continent">Острова</button>
+              <button class="filter__toggle-tablet">показать все</button>
+            </div>
+            <div class="filter__invis">
               <ul>
                 <li>А</li>
                 <li>Б</li>
@@ -101,61 +106,71 @@
           <div class="choose-companion__container">
             <h3 class="choose-companion__title">Подберите идеального попутчика</h3>
             <form action="https://echo.htmlacademy.ru" class="choose-companion__form" method="POST">
-              <div class="choose-companion__hobby">
-                <div class="choose-companion__toggle" type="button">Хобби</div>
-                <input type="checkbox" name="gym" id="gym">
-                <label for="gym">Спортзал</label>
-                <input type="checkbox" name="hookah" id="hookah">
-                <label for="hookah">Кальян</label>
-                <input type="checkbox" name="sofa" id="sofa">
-                <label for="sofa">Диван</label>
-              </div>
-              <div class="choose-companion__music">
-                <div class="choose-companion__toggle" type="button">Музыка</div>
-                <input type="checkbox" name="rock" id="rock">
-                <label for="rock">Тяжелый рок</label>
-                <input type="checkbox" name="rap" id="rap">
-                <label for="rap">Русский рэп</label>
-                <input type="checkbox" name="eurodance" id="eurodance">
-                <label for="eurodance">Евроденс</label>
-              </div>
-              <div class="choose-companion__food">
-                <div class="choose-companion__toggle" type="button">Еда</div>
-                <input type="checkbox" name="meat" id="meat">
-                <label for="meat">Мясоед</label>
-                <input type="checkbox" name="healthy" id="healthy">
-                <label for="healthy">Сидит на ПП</label>
-                <input type="checkbox" name="vegan" id="vegan">
-                <label for="vegan">Веган-сыроед</label>
-              </div>
-              <div class="choose-companion__transport">
-                <div class="choose-companion__toggle" type="button">Транспорт</div>
-                <input type="checkbox" name="airbus" id="airbus">
-                <label for="airbus"></label>
-                <input type="checkbox" name="car" id="car">
-                <label for="car"></label>
-                <input type="checkbox" name="cycle" id="cycle">
-                <label for="cycle"></label>
-                <input type="checkbox" name="walk" id="walk">
-                <label for="walk"></label>
-              </div>
-              <div class="choose-companion__level">
-                <div class="choose-companion__toggle" type="button">Левел</div>
-                <div class="choose-companion__range level-range">
-                  <div class="level-range__price-control">
-                    <label class="level-range__min-price">
-                      <input type="number" name="min-price" value="30">
-                    </label>
-                    <label class="level-range__max-price">
-                      <input type="number" name="max-price" value="100">
-                    </label>
+              <div class="choose-companion__form-tablet-border">
+                <div class="choose-companion__hobby">
+                  <div class="choose-companion__toggle" type="button">Хобби</div>
+                  <div class="choose-companion__hobby-box choose-companion__hobby-box--inactive">
+                    <input type="checkbox" name="gym" id="gym">
+                    <label for="gym">Спортзал</label>
+                    <input type="checkbox" name="hookah" id="hookah">
+                    <label for="hookah">Кальян</label>
+                    <input type="checkbox" name="sofa" id="sofa">
+                    <label for="sofa">Диван</label>
                   </div>
-                  <div class="level-range__range-control">
-                    <div class="level-range__scale">
-                      <div class="level-range__bar" style="width:55%; margin-left: 11%;"></div>
+                </div>
+                <div class="choose-companion__music">
+                  <div class="choose-companion__toggle" type="button">Музыка</div>
+                  <div class="choose-companion__music-box">
+                    <input type="checkbox" name="rock" id="rock">
+                    <label for="rock">Тяжелый рок</label>
+                    <input type="checkbox" name="rap" id="rap">
+                    <label for="rap">Русский рэп</label>
+                    <input type="checkbox" name="eurodance" id="eurodance">
+                    <label for="eurodance">Евроденс</label>
+                  </div>
+                </div>
+                <div class="choose-companion__food">
+                  <div class="choose-companion__toggle" type="button">Еда</div>
+                  <div class="choose-companion__food-box choose-companion__food-box--inactive">
+                    <input type="checkbox" name="meat" id="meat">
+                    <label for="meat">Мясоед</label>
+                    <input type="checkbox" name="healthy" id="healthy">
+                    <label for="healthy">Сидит на ПП</label>
+                    <input type="checkbox" name="vegan" id="vegan">
+                    <label for="vegan">Веган-сыроед</label>
+                  </div>
+                </div>
+                <div class="choose-companion__transport">
+                  <div class="choose-companion__toggle" type="button">Транспорт</div>
+                  <div class="choose-companion__transport-box">
+                    <input type="checkbox" name="airbus" id="airbus">
+                    <label class="choose-companion__airbus" for="airbus"></label>
+                    <input type="checkbox" name="car" id="car">
+                    <label class="choose-companion__car" for="car"></label>
+                    <input type="checkbox" name="cycle" id="cycle">
+                    <label class="choose-companion__cycle" for="cycle"></label>
+                    <input type="checkbox" name="walk" id="walk">
+                    <label class="choose-companion__walk" for="walk"></label>
+                  </div>
+                </div>
+                <div class="choose-companion__level">
+                  <div class="choose-companion__toggle" type="button">Левел</div>
+                  <div class="choose-companion__range level-range">
+                    <div class="level-range__price-control">
+                      <label class="level-range__min-price">
+                        <input type="text" name="min-price" value="30">
+                      </label>
+                      <label class="level-range__max-price">
+                        <input type="text" name="max-price" value="100">
+                      </label>
                     </div>
-                    <div class="level-range__dot level-range__dot--min" tabindex="0" style="margin-left: 11%;"></div>
-                    <div class="level-range__dot level-range__dot--max" tabindex="0" style="margin-left: 55%;"></div>
+                    <div class="level-range__range-control">
+                      <div class="level-range__scale">
+                        <div class="level-range__bar"></div>
+                      </div>
+                      <div class="level-range__dot level-range__dot--min" tabindex="0"></div>
+                      <div class="level-range__dot level-range__dot--max" tabindex="0"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -174,25 +189,27 @@
                   <span class="catalog-user__likes">1,5 М</span>
                   <p class="catalog-user__hashtags tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                   <div class="catalog-user__countries-container">
-                    <span class="catalog-user__parts">хочет посетить:</span>
-                    <ul class="catalog-user__countries countries">
-                      <li class="countries__item countries__item--sri-lanka">Шри-ланка</li>
-                      <li class="countries__item countries__item--thailand">Тайланд</li>
-                      <li class="countries__item countries__item--seychelles">Сейшелы</li>
+                    <span class="catalog-user__parts catalog-user__parts--country">хочет посетить:</span>
+                    <ul class="catalog-user__countries countries-catalog">
+                      <li class="countries-catalog__item countries-catalog__item--sri-lanka">Шри-ланка</li>
+                      <li class="countries-catalog__item countries-catalog__item--thailand">Тайланд</li>
+                      <li class="countries-catalog__item countries-catalog__item--seychelles">Сейшелы</li>
                     </ul>
                   </div>
-                  <div class="catalog-user__transport-container">
-                    <span class="catalog-user__parts">транспорт:</span>
-                    <ul class="catalog-user__transport transport-list">
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--car"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
-                    </ul>
-                  </div>
-                  <div class="catalog-user__level-container">
-                    <span class="catalog-user__parts">левел:</span>
-                    <span class="catalog-user__level">99</span>
+                  <div class="catalog-user__wrapper">
+                    <div class="catalog-user__transport-container">
+                      <span class="catalog-user__parts catalog-user__parts--transport">транспорт:</span>
+                      <ul class="catalog-user__transport transport-list">
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--car"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
+                      </ul>
+                    </div>
+                    <div class="catalog-user__level-container">
+                      <span class="catalog-user__parts catalog-user__parts--level">левел:</span>
+                      <span class="catalog-user__level">99</span>
+                    </div>
                   </div>
                   <a href="response.html" class="catalog-user__invite">Позвать!</a>
                 </article>
@@ -205,24 +222,26 @@
                   <span class="catalog-user__likes">1500</span>
                   <p class="catalog-user__hashtags tags">#бургер #бар #футбол #концерт #крафт</p>
                   <div class="catalog-user__countries-container">
-                    <span class="catalog-user__parts">хочет посетить:</span>
-                    <ul class="catalog-user__countries countries">
-                      <li class="countries__item countries__item--belgium">Бельгия</li>
-                      <li class="countries__item countries__item--czech">Чехия</li>
+                    <span class="catalog-user__parts catalog-user__parts--country">хочет посетить:</span>
+                    <ul class="catalog-user__countries countries-catalog">
+                      <li class="countries-catalog__item countries-catalog__item--belgium">Бельгия</li>
+                      <li class="countries-catalog__item countries-catalog__item--czech">Чехия</li>
                     </ul>
                   </div>
-                  <div class="catalog-user__transport-container">
-                    <span class="catalog-user__parts">транспорт:</span>
-                    <ul class="catalog-user__transport transport-list">
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--car transport-list__item--active"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--foot transport-list__item--active"></li>
-                    </ul>
-                  </div>
-                  <div class="catalog-user__level-container">
-                    <span class="catalog-user__parts">левел:</span>
-                    <span class="catalog-user__level">80</span>
+                  <div class="catalog-user__wrapper">
+                    <div class="catalog-user__transport-container">
+                      <span class="catalog-user__parts catalog-user__parts--transport">транспорт:</span>
+                      <ul class="catalog-user__transport transport-list">
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--car transport-list__item--active"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--foot transport-list__item--active"></li>
+                      </ul>
+                    </div>
+                    <div class="catalog-user__level-container">
+                      <span class="catalog-user__parts catalog-user__parts--level">левел:</span>
+                      <span class="catalog-user__level">80</span>
+                    </div>
                   </div>
                   <a href="response.html" class="catalog-user__invite">Позвать!</a>
                 </article>
@@ -235,25 +254,27 @@
                   <span class="catalog-user__likes">170</span>
                   <p class="catalog-user__hashtags tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
                   <div class="catalog-user__countries-container">
-                    <span class="catalog-user__parts">хочет посетить:</span>
-                    <ul class="catalog-user__countries countries">
-                      <li class="countries__item countries__item--usa">США</li>
-                      <li class="countries__item countries__item--australia">Австралия</li>
-                      <li class="countries__item countries__item--dominicana">Доминикана</li>
+                    <span class="catalog-user__parts catalog-user__parts--country">хочет посетить:</span>
+                    <ul class="catalog-user__countries countries-catalog">
+                      <li class="countries-catalog__item countries-catalog__item--usa">США</li>
+                      <li class="countries-catalog__item countries-catalog__item--australia">Австралия</li>
+                      <li class="countries-catalog__item countries-catalog__item--dominicana">Доминика</li>
                     </ul>
                   </div>
-                  <div class="catalog-user__transport-container">
-                    <span class="catalog-user__parts">транспорт:</span>
-                    <ul class="catalog-user__transport transport-list">
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--car"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle transport-list__item--active"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
-                    </ul>
-                  </div>
-                  <div class="catalog-user__level-container">
-                    <span class="catalog-user__parts">левел:</span>
-                    <span class="catalog-user__level">25</span>
+                  <div class="catalog-user__wrapper">
+                    <div class="catalog-user__transport-container">
+                      <span class="catalog-user__parts catalog-user__parts--transport">транспорт:</span>
+                      <ul class="catalog-user__transport transport-list">
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--car"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle transport-list__item--active"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
+                      </ul>
+                    </div>
+                    <div class="catalog-user__level-container">
+                      <span class="catalog-user__parts catalog-user__parts--level">левел:</span>
+                      <span class="catalog-user__level">25</span>
+                    </div>
                   </div>
                   <a href="response.html" class="catalog-user__invite">Позвать!</a>
                 </article>
@@ -266,24 +287,26 @@
                   <span class="catalog-user__likes">23</span>
                   <p class="catalog-user__hashtags tags">#образование #карьера #учеба #линкедин</p>
                   <div class="catalog-user__countries-container">
-                    <span class="catalog-user__parts">хочет посетить:</span>
-                    <ul class="catalog-user__countries countries">
-                      <li class="countries__item countries__item--uk">Великобритания</li>
-                      <li class="countries__item countries__item--germany">Германия</li>
+                    <span class="catalog-user__parts catalog-user__parts--country">хочет посетить:</span>
+                    <ul class="catalog-user__countries countries-catalog">
+                      <li class="countries-catalog__item countries-catalog__item--uk">Великобритания</li>
+                      <li class="countries-catalog__item countries-catalog__item--germany">Германия</li>
                     </ul>
                   </div>
-                  <div class="catalog-user__transport-container">
-                    <span class="catalog-user__parts">транспорт:</span>
-                    <ul class="catalog-user__transport transport-list">
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--car transport-list__item--active"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
-                      <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
-                    </ul>
-                  </div>
-                  <div class="catalog-user__level-container">
-                    <span class="catalog-user__parts">левел:</span>
-                    <span class="catalog-user__level">50</span>
+                  <div class="catalog-user__wrapper">
+                    <div class="catalog-user__transport-container">
+                      <span class="catalog-user__parts catalog-user__parts--transport">транспорт:</span>
+                      <ul class="catalog-user__transport transport-list">
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--airplane transport-list__item--active"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--car transport-list__item--active"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--cycle"></li>
+                        <li class="transport-list__item transport-list__item--catalog transport-list__item--foot"></li>
+                      </ul>
+                    </div>
+                    <div class="catalog-user__level-container">
+                      <span class="catalog-user__parts catalog-user__parts--level">левел:</span>
+                      <span class="catalog-user__level">50</span>
+                    </div>
                   </div>
                   <a href="response.html" class="catalog-user__invite">Позвать!</a>
                 </article>
@@ -317,7 +340,7 @@
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
         </ul>
         <div class="page-footer__copyright">
-          <span class="page-footer_copyright">Разработано</span>
+          <span class="page-footer__copyright-text">Разработано</span>
           <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="" class="page-footer__copyright-img" width="27" height="33"></a>
         </div>
       </div>

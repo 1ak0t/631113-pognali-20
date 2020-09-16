@@ -1,0 +1,154 @@
+.level-range {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.level-range__price-control {
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid $range-border;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 148px;
+    position: relative;
+    left: 60px;
+    top: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 7px;
+  }
+}
+
+.level-range__max-price,
+.level-range__min-price {
+  input {
+    width: 110px;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: $basic-blue-light;
+    padding-top: 11px;
+    padding-bottom: 8px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 74px;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 96px;
+      font-size: 20px;
+      padding-bottom: 11px;
+    }
+  }
+}
+
+.level-range__max-price {
+  input {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+.level-range__min-price {
+  input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}
+
+.level-range__range-control {
+  position: relative;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 281px;
+    top: -17px;
+    padding-left: 68px;
+  }
+}
+
+.level-range__scale {
+  height: 2px;
+  background-color: $basic-blue-light02;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+    height: 3px;
+    border-radius: 2px;
+  }
+}
+
+.level-range__bar {
+  height: 2px;
+  background-color: $basic-blue-light;
+  width: 63%;
+  margin-left: 34%;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 69%;
+    margin-left: 28%;
+  }
+}
+
+.level-range__dot {
+  &--min {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $basic-blue-light;
+    position: absolute;
+    top: -4px;
+    left: 67px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 13px;
+      height: 13px;
+      top: 16px;
+      left: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 13px;
+      height: 13px;
+      top: -5px;
+      left: 59px;
+    }
+  }
+
+  &--max {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $basic-blue-light;
+    position: absolute;
+    top: -4px;
+    left: 210px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 13px;
+      height: 13px;
+      top: 16px;
+      left: 336px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 13px;
+      height: 13px;
+      top: -6px;
+      left: 178px;
+    }
+  }
+}

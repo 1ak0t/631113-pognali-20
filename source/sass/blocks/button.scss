@@ -1,14 +1,28 @@
 .button {
   display: block;
   width: 100%;
-  background: $basic-yellow url("../img/triangle-arrow-right.svg") 89% center no-repeat;
-  background-size: 11px;
+  background: $basic-yellow url("../img/triangle-arrow-right.svg") 91% center no-repeat;
+  background-size: 8px;
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
   color: $basic-blue-light;
   padding: 22px 133px 22px 23px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 133px 27px 32px;
+    border-radius: 20px;
+    background-size: 9px;
+    font-size: 24px;
+    background-position-x: 94.4%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 276px;
+    padding-right: 32px;
+    background-position-x: 86.4%;
+  }
 }
 
 .button--border {

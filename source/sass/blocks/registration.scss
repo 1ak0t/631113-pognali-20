@@ -1,39 +1,84 @@
 .registration {
   background-color: $header-steps-bg;
-  border-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  margin-top: -30px;
+  z-index: 6;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-top: -60px;
+  }
 }
 
 .registration__container {
   @include width($mobile-width);
-  padding: 105px 25px 44px 25px;
+  padding: 82px 25px 44px 25px;
 
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
     padding: 76px;
+    padding-top: 82px;
   }
 
   @media (min-width: $desktop-width) {
     @include width($desktop-width);
     padding: 133px;
+    padding-top: 142px;
+    padding-bottom: 88px;
   }
 }
 
 .registration__title {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .registration__paragraph {
   text-align: center;
   color: $basic-white;
+  width: 200px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 650px;
     margin: 0 auto;
+    padding-left: 24px;
   }
 }
 
 .registration__form {
   display: flex;
+  margin-top: 29px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 71px;
+
+    .reg-form__button {
+      background-position-x: 88%;
+    }
+  }
 }
 
 .registration__link {
@@ -43,9 +88,24 @@
 .registration__answer {
   text-align: center;
   color: $basic-white;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.01em;
+    padding-left: 2px;
+    padding-right: 0;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -10px;
+    margin-bottom: 78px;
+  }
 }
 
 .registration__contact-container {
+  padding-left: 61px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -54,10 +114,87 @@
   }
 }
 
+.registration__break {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .registration__tel {
   display: block;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: $tel-email url("../img/contacts-phone.svg") center center no-repeat;
+    background-size: 15px;
+    position: absolute;
+    top: -13px;
+    left: -61px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+      top: -27px;
+      background-size: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -36px;
+      left: -31px;
+      background-size: 30px;
+    }
+  }
 }
 
 .registration__email {
   display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: $tel-email url("../img/contacts-mail.svg") center center no-repeat;
+    background-size: 15px;
+    position: absolute;
+    top: -10px;
+    left: -61px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+      top: -24px;
+      background-size: 27px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -38px;
+      left: -94px;
+      background-size: 36px;
+    }
+  }
 }

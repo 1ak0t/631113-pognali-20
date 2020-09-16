@@ -3,6 +3,9 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    position: relative;
+    left: -109px;
+    top: 3px;
   }
 
   .main-nav__social {

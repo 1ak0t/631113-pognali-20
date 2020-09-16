@@ -1,0 +1,26 @@
+.flag {
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 24px;
+    background-color: $basic-black;
+    border-radius: 3px;
+    position: absolute;
+    top: -13px;
+    left: 25px;
+
+    @media (min-width: $tablet-width) {
+      width: 70px;
+      height: 47px;
+      border-radius: 8px;
+      left: 397px;
+      top: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 338px;
+      top: 23px;
+    }
+  }
+}

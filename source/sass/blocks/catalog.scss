@@ -11,16 +11,20 @@
   @include width($mobile-width);
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 46px;
+  padding-bottom: 76px;
 
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 103px;
   }
 
   @media (min-width: $desktop-width) {
-    @include width(951px);
+    @include width(100%);
+    padding-left: 60px;
+    padding-right: 26px;
+    padding-bottom: 116px;
   }
 }
 
@@ -34,6 +38,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .catalog__more-user {
@@ -45,6 +53,42 @@
   text-transform: uppercase;
   color: $basic-blue-light;
   margin-bottom: 18px;
+  margin-top: 19px;
+  margin-left: 31px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background: url("../img/show-more-plus.svg") center center no-repeat;
+    position: absolute;
+    left: 25px;
+    top: 0;
+    background-size: 16px;
+
+    @media (min-width: $tablet-width) {
+      left: 205px;
+      background-size: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 368px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-left: 43px;
+    margin-bottom: 47px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+    margin-left: -22px;
+    margin-bottom: 68px;
+  }
 }
 
 .catalog__pages {
@@ -52,16 +96,16 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 565px 1fr 1fr;
+    grid-template-columns: 589px 1fr 1fr;
     background-color: $basic-white;
     border-radius: 20px;
     align-items: center;
-    padding-right: 35px;
+    padding-right: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 771px 1fr 1fr;
-    padding-right: 41px;
+    grid-template-columns: 837px 1fr 1fr;
+    padding-right: 28px;
   }
 }
 

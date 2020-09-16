@@ -2,6 +2,7 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Погнали</title>
   </head>
@@ -11,8 +12,8 @@
         <div class="page-header__top">
           <div class="page-header__logo-container">
             <img class="page-header__logo page-header__logo--mobile" src="img/logo-mobile-white@1x.png" alt="" width="100" height="19">
-            <img class="page-header__logo page-header__logo--tablet" src="img/logo-tablet-blue@1x.png" alt="" width="164" height="42">
-            <img class="page-header__logo page-header__logo--desktop" src="img/logo-desktop-white@1x.png" alt="" width="164" height="42">
+            <img class="page-header__logo page-header__logo--tablet" src="img/logo-desktop-blue@1x.png" alt="" width="164" height="42">
+            <img class="page-header__logo page-header__logo--desktop" src="img/logo-desktop-white@1x.png" alt="" width="200" height="52">
           </div>
           <button class="page-header__toggle"></button>
           <nav class="main-nav">
@@ -37,7 +38,7 @@
           </div>
         </div>
         <div class="page-header__bottom">
-          <h1 class="page-header__title page-header__title--index">В путешествие с крутыми попутчиками</h1>
+          <h1 class="page-header__title page-header__title--index">В путешествие с крутыми попутчиками!</h1>
           <div class="page-header_man-container">
             <img class="page-header__man page-header__man--mobile" src="img/traveller-illustration-mobile@1x.png" alt="" width="192" height="255">
             <img class="page-header__man page-header__man--tablet" src="img/traveller-illustration-tablet@1x.png" alt="" width="372" height="451">
@@ -45,13 +46,13 @@
           </div>
           <blockquote class="page-header__review">
             <p>«Лучшее приложение, что я видел в жизни!»</p>
-            <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+            <cite>Мурат Эльтазин главный&nbsp;редактор газеты «гаджетлайф»</cite>
           </blockquote>
           <div class="page-header__wrapper">
             <ul class="page-header__steps main-steps">
               <li class="main-steps__step main-steps__step--1"><a href="#">Выберите направление</a></li>
               <li class="main-steps__step main-steps__step--2"><a href="#">Изучите идеи путешественников</a></li>
-              <li class="main-steps__step main-steps__step--3"><a href="#">Находите тех, кто похож на вас</a></li>
+              <li class="main-steps__step main-steps__step--3"><a href="#">Находите тех, кто&nbsp;похож на вас</a></li>
               <li class="main-steps__step main-steps__step--4"><a href="#">Путешествуйте вместе!</a></li>
             </ul>
           </div>
@@ -61,10 +62,10 @@
     <main>
       <section class="about">
         <div class="about__container">
-          <div class="about-wrapper">
+          <div class="about__wrapper">
             <h2 class="about__title block-title">О сервисе</h2>
             <p class="about__description description">
-              Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+              Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в&nbsp;чужих.
             </p>
             <p class="about__description description description--bold">
               А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
@@ -82,7 +83,7 @@
           <div class="destination__prologue">
             <h2 class="destination__title block-title">Направления</h2>
             <p class="destination__description description">
-              Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+              Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
             </p>
           </div>
           <div class="destination__wrapper">
@@ -140,9 +141,9 @@
             <li class="companions__item">
               <article class="companions__user user">
                 <img src="img/firsova-desktop@1x.jpg" alt="" width="270" height="270">
-                <div class="user__level">
-                  <span>99</span>
-                  <span>level</span>
+                <div class="user__level-container">
+                  <span class="user__lvl">99</span>
+                  <span class="user__lvl-word">level</span>
                 </div>
                 <ul class="user__countries countries">
                   <li class="countries__item countries__item--sri-lanka"></li>
@@ -162,9 +163,9 @@
             <li class="companions__item">
               <article class="companions__user user">
                 <img src="img/demin-desktop@1x.jpg" alt="" width="270" height="270">
-                <div class="user__level">
-                  <span>80</span>
-                  <span>level</span>
+                <div class="user__level-container">
+                  <span class="user__lvl">80</span>
+                  <span class="user__lvl-word">level</span>
                 </div>
                 <ul class="user__countries countries">
                   <li class="countries__item countries__item--belgium"></li>
@@ -188,11 +189,18 @@
         <div class="add-profile__container">
           <h2 class="add-profile__title block-title">Добавьте свой профиль</h2>
           <img src="img/rates@1x.png" alt="" class="add-profile__img" width="100" height="100">
-          <ul class="add-profile__rate rate-list">
-            <li class="rate-list__item"><a href="#" class="rate-list__link rate-list__link--free">Базовое размещение</a><br><span>Бесплатно</span></li>
-            <li class="rate-list__item"><a href="#" class="rate-list__link rate-list__link--first">Вывод на первых позициях</a><br><span>99 руб./мес</span></li>
-            <li class="rate-list__item"><a href="#" class="rate-list__link rate-list__link--color">Кастомный цвет карточки</a><br><span>59 руб./мес</span></li>
-          </ul>
+          <div class="add-profile__rate-block">
+            <ul class="add-profile__rate rate-list">
+              <li class="rate-list__item"><a href="#" class="rate-list__link rate-list__link--free">Базовое размещение</a><br><span class="rate-list__cost rate-list__cost--free">Бесплатно</span></li>
+              <li class="rate-list__item"><a href="#" class="rate-list__link rate-list__link--first">Вывод на первых позициях</a><br><span class="rate-list__cost rate-list__cost--first">99 руб./мес</span></li>
+              <li class="rate-list__item"><a href="#" class="rate-list__link rate-list__link--color">Кастомный цвет карточки</a><br><span class="rate-list__cost rate-list__cost--color">59 руб./мес</span></li>
+            </ul>
+            <ul class="add-profile__number-list">
+              <li class="add-profile__number add-profile__number--1">1</li>
+              <li class="add-profile__number add-profile__number--2">2</li>
+              <li class="add-profile__number add-profile__number--3">3</li>
+            </ul>
+          </div>
           <div class="add-profile__cost"></div>
           <a href="rate.html" class="add-profile__link">Показать тарифы для бизнеса</a>
         </div>
@@ -201,14 +209,14 @@
         <div class="registration__container">
           <h2 class="registration__title block-title">Заинтересовались?</h2>
           <p class="registration__paragraph description">
-            Зарегистрируйтесь, это быстро и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a href="#" class="registration__link">авторизуйтесь</a>.
+            Зарегистрируйтесь, это&nbsp;быстро и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a href="#" class="registration__link">авторизуйтесь</a>.
           </p>
           <form action="https://echo.htmlacademy.ru" class="registration__form reg-form" method="post">
             <input class="reg-form__mail" type="email" name="reg_email" placeholder="E-mail">
             <input class="reg-form__button" type="submit" name="reg_submit" value="">
           </form>
           <p class="registration__answer description">
-            Остались вопросы? Мы с радостью на них ответим!
+            Остались вопросы?<br class="registration__break"> Мы с радостью на них ответим!
           </p>
           <div class="registration__contact-container">
             <a href="tel:88005558628" class="registration__tel main-tel main-tel--yellow">8 800 555-86-28</a>
@@ -221,7 +229,11 @@
           <a href="" class="address__house main-address">ул. Большая Конюшенная, 19/8</a>
           <a href="" class="address__route button button--border">Проложить маршрут</a>
         </div>
-        <div class="address__map"></div>
+      </section>
+      <section class="map">
+        <div class="map__container">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A099675bde5dae0d5d7bf668997975bca1136df4ffeb2003613dc190f689e334a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -237,7 +249,7 @@
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
         </ul>
         <div class="page-footer__copyright">
-          <span class="page-footer_copyright">Разработано</span>
+          <span class="page-footer__copyright-text">Разработано</span>
           <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="" class="page-footer__copyright-img" width="27" height="33"></a>
         </div>
       </div>

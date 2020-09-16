@@ -1,0 +1,51 @@
+.countries-catalog {
+  @include clear-list;
+}
+
+.countries-catalog__item {
+  color: $basic-blue-light;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 48px;
+
+  &--sri-lanka::before,
+  &--thailand::before,
+  &--seychelles::before,
+  &--belgium::before,
+  &--czech::before,
+  &--usa::before,
+  &--australia::before,
+  &--dominicana::before,
+  &--uk::before,
+  &--germany::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 18px;
+    position: absolute;
+    top: -3px;
+    left: 7px;
+    background: $basic-black;
+
+    @media (min-width: $tablet-width) {
+      width: 35px;
+      height: 24px;
+      top: -4px;
+      left: 1px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-right: 26px;
+    margin-bottom: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 52px;
+    margin-bottom: 16px;
+  }
+}

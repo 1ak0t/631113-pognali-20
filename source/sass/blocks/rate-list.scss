@@ -2,9 +2,66 @@
   @include clear-list;
 
   font-weight: 300;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
+}
+
+.rate-list__item {
+  display: block;
+  height: 66px;
+  padding-top: 8px;
+  line-height: 21px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
+    padding-top: 26px;
+  }
 }
 
 .rate-list__link {
   color: $basic-gray;
+}
+
+.rate-list__cost {
+  &--free {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 256px;
+      right: 74px;
+      z-index: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 359px;
+      right: 405px;
+    }
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 323px;
+      right: 74px;
+      z-index: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 425px;
+      right: 405px;
+    }
+  }
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 389px;
+      right: 74px;
+      z-index: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 491px;
+      right: 405px;
+    }
+  }
 }

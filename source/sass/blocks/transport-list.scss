@@ -10,7 +10,7 @@
   height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 13px;
+  background-size: 15px;
 
   &--airplane {
     background-image: url("../img/plane.svg");
@@ -33,5 +33,10 @@
     height: 32px;
     background-color: $destination-bg;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+      background-size: 18px;
+    }
   }
 }
