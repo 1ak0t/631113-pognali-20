@@ -10,6 +10,12 @@
   border-bottom: 1px solid $range-border;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    padding-top: 35px;
+    padding-bottom: 29px;
+  }
 }
 
 .calendar__weekdays {
@@ -18,6 +24,25 @@
   display: flex;
   justify-content: space-around;
   margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+    position: relative;
+    left: -46px;
+  }
+}
+
+.calendar__weekdays-full {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .calendar__holyday {
@@ -32,6 +57,16 @@
   margin-top: 6px;
   width: 224px;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 532px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1036px;
+    margin-top: 18px;
+    margin-bottom: 59px;
+  }
 }
 
 .calendar__day {
@@ -53,5 +88,38 @@
   &--inactive {
     background-color: $basic-white;
     color: $range-border;
+  }
+
+  span {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 69px;
+    line-height: 69px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 143px;
+    height: 71px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 14px;
+    padding-right: 65px;
+
+    span {
+      display: inline-block;
+      line-height: 20px;
+    }
+
+    &--active {
+      span {
+        margin-top: 7px;
+      }
+    }
   }
 }

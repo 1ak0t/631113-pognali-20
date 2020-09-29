@@ -12,8 +12,8 @@
   @media (min-width: $desktop-width) {
     padding-left: 90px;
   }
-}
 
-.main-tel--yellow {
-  color: $basic-yellow;
+  &--yellow {
+    color: $basic-yellow;
+  }
 }

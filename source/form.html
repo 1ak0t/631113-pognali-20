@@ -2,18 +2,27 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__container">
+    <header class="page-header page-header--inner">
+      <div class="page-header__container page-header__container--inner">
         <div class="page-header__top page-header__top--inner">
-          <div class="page-header__logo-container">
-            <img class="page-header__logo page-header__logo--mobile" src="img/logo-mobile-white@1x.png" alt="" width="100" height="19">
-            <img class="page-header__logo page-header__logo--tablet" src="img/logo-tablet-white@1x.png" alt="" width="164" height="42">
-            <img class="page-header__logo page-header__logo--desktop" src="img/logo-desktop-white@1x.png" alt="" width="164" height="42">
-          </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <img class="page-header__logo" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="" width="100" height="19">
+          </picture>
           <button class="page-header__toggle"></button>
           <nav class="main-nav">
             <ul class="main-nav__list menu-list">
@@ -45,7 +54,11 @@
       <section class="profile">
         <div class="profile__container">
           <div class="profile__level"></div>
-          <img class="profile__photo" src="img/demin-desktop@1x.jpg" alt="" width="100" height="100">
+          <picture class="profile__photo">
+            <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+            <img class="profile__photo" src="img/demin-mobile@1x.jpg" srcset="iimg/demin-mobile@2x.jpg 2x" alt="" width="100" height="100">
+          </picture>
           <div class="profile__button-container">
             <a class="profile__change-photo profile__change-photo--mobile" href="#">Сменить фото</a>
             <a class="profile__change-photo profile__change-photo--desktop" href="#">Фото</a>
@@ -74,7 +87,7 @@
                 <span class="plans__country-number">1.</span>
                 <h3 class="plans__country">Франция, Италия</h3>
                 <span class="plans__travelers">3 попутчика</span>
-                <span class="plans__date">26 мар - 29 мар</span>
+                <span class="plans__date">26 мар &mdash;&mdash; 29 мар</span>
                 <a href="#" class="plans__change">Изменить</a>
               </div>
             </li>
@@ -83,7 +96,7 @@
                 <span class="plans__country-number">2.</span>
                 <h3 class="plans__country">Таиланд, Индонезия</h3>
                 <span class="plans__travelers">1 попутчик</span>
-                <span class="plans__date">1 июл - 15 июл</span>
+                <span class="plans__date">1 июл &mdash;&mdash; 15 июл</span>
                 <a href="#" class="plans__change">Изменить</a>
               </div>
             </li>
@@ -92,30 +105,36 @@
       </section>
       <section class="add-plan">
         <div class="add-plan__container">
-          <h2 class="add-plan__title block-title block-title--blue">Добавьте план:</h2>
+          <h2 class="add-plan__title block-title block-title--blue">Добавить план:</h2>
           <div class="add-plan__step-dots"></div>
           <div class="add-plan__step-dots"></div>
           <div class="add-plan__step-dots"></div>
           <form action="https://echo.htmlacademy.ru" class="add-plan__form" method="POST">
             <div class="add-plan__step step-card" id="step-1">
-              <h3 class="step-card__title">Шаг 1.<br> Даты пребывания</h3>
+              <h3 class="step-card__title">Шаг 1.&nbsp;<br class="step-card__br"> Даты пребывания</h3>
               <p class="step-card__description description">
-                Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                Укажите предпочтительное количество попутчиков, которых &nbsp;<br class="step-card__step1-br">вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.
               </p>
-              <label class="step-card__people" for="peoples">Ищу попутчиков</label>
-              <div class="step-card__counter">
-                <button type="button">-</button>
-                <input type="number" name="peoples" id="peoples" value="2" required>
-                <button type="button">+</button>
+              <div class="step-card__people-container">
+                <label class="step-card__people" for="peoples">Ищу попутчиков:</label>
+                <div class="step-card__counter">
+                  <button type="button">-</button>
+                  <input type="number" name="peoples" id="peoples" value="2" required>
+                  <button type="button">+</button>
+                </div>
               </div>
-              <label class="step-card__duration" for="duration">Длительность</label>
-              <div class="step-card__counter">
-                <button type="button">-</button>
-                <input type="number" name="duration" id="duration" value="2" required>
-                <button type="button">+</button>
+              <div class="step-card__duration-container">
+                <label class="step-card__duration" for="duration">Длительность:</label>
+                <div class="step-card__counter">
+                  <button type="button">-</button>
+                  <input type="number" name="duration" id="duration" value="2" required>
+                  <button type="button">+</button>
+                </div>
               </div>
-              <input class="step-card__child" type="checkbox" name="child-with" id="child-with">
-              <label class="step-card__child-label" for="child-with">Можно с детьми</label>
+              <div class="step-card__child-container">
+                <input class="step-card__child" type="checkbox" name="child-with" id="child-with">
+                <label class="step-card__child-label" for="child-with">Можно с детьми</label>
+              </div>
               <div class="step-card__calendar calendar">
                 <div class="calendar__month">
                   <button type="button">&lt;</button>
@@ -123,13 +142,13 @@
                   <button type="button">&gt;</button>
                 </div>
                 <ul class="calendar__weekdays">
-                  <li>П</li>
-                  <li>В</li>
-                  <li>С</li>
-                  <li>Ч</li>
-                  <li>П</li>
-                  <li class="calendar__holyday">С</li>
-                  <li class="calendar__holyday">В</li>
+                  <li>П<span class="calendar__weekdays-full">н</span></li>
+                  <li>В<span class="calendar__weekdays-full">т</span></li>
+                  <li>С<span class="calendar__weekdays-full">р</span></li>
+                  <li>Ч<span class="calendar__weekdays-full">т</span></li>
+                  <li>П<span class="calendar__weekdays-full">т</span></li>
+                  <li class="calendar__holyday">С<span class="calendar__weekdays-full">б</span></li>
+                  <li class="calendar__holyday">В<span class="calendar__weekdays-full">с</span></li>
                 </ul>
                 <ul class="calendar__days">
                   <li class="calendar__day calendar__day--inactive">23</li>
@@ -138,7 +157,7 @@
                   <li class="calendar__day calendar__day--inactive">26</li>
                   <li class="calendar__day calendar__day--inactive">27</li>
                   <li class="calendar__day calendar__day--inactive">28</li>
-                  <li class="calendar__day calendar__day--inactive">1</li>
+                  <li class="calendar__day calendar__day--inactive">1 <span>мар</span></li>
                   <li class="calendar__day calendar__day--inactive">2</li>
                   <li class="calendar__day calendar__day--inactive">3</li>
                   <li class="calendar__day calendar__day--inactive">4</li>
@@ -163,13 +182,13 @@
                   <li class="calendar__day calendar__day--inactive">23</li>
                   <li class="calendar__day calendar__day--inactive">24</li>
                   <li class="calendar__day calendar__day--inactive">25</li>
-                  <li class="calendar__day calendar__day--active">26</li>
+                  <li class="calendar__day calendar__day--active">26 <span>Заезд</span></li>
                   <li class="calendar__day calendar__day--active">27</li>
-                  <li class="calendar__day calendar__day--active">28</li>
+                  <li class="calendar__day calendar__day--active">28 <span>Выезд</span></li>
                   <li class="calendar__day">29</li>
                   <li class="calendar__day">30</li>
                   <li class="calendar__day">31</li>
-                  <li class="calendar__day">1</li>
+                  <li class="calendar__day">1 <span>апр</span></li>
                   <li class="calendar__day">2</li>
                   <li class="calendar__day">3</li>
                   <li class="calendar__day">4</li>
@@ -178,22 +197,22 @@
                 <a href="#step-2" class="step-card__button">Следующий шаг</a>
               </div>
             </div>
-            <div class="add-plan__step step-card" id="step-2">
-              <h3 class="step-card__title">Шаг 2.<br>Маршрут</h3>
+            <div class="add-plan__step step-card step-card--2" id="step-2">
+              <h3 class="step-card__title">Шаг 2.&nbsp;<br class="step-card__br">Маршрут</h3>
               <p class="step-card__description description">
-                Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+                Укажите страны, которые вы хотели посетить.<br class="step-card__step2-br"> Это может быть одна или сразу несколько.
               </p>
               <div class="step-card__countries">
                 <select class="step-card__countries-place" name="step-countries" id="step-countries" required>
-                  <option value="choose" disabled selected>Выберите страну</option>
-                  <option value="BaG">Босния и Герцеговина</option>
+                  <option value="choose" disabled>Выберите страну</option>
+                  <option value="BaG" selected>Босния и Герцеговина</option>
                   <option value="Czech">Чехия</option>
                   <button type="button">Добавьте страну</button>
                 </select>
                 <select class="step-card__countries-place" name="step-countries" id="step-countries">
-                  <option value="choose" disabled selected>Выберите страну</option>
+                  <option value="choose" disabled>Выберите страну</option>
                   <option value="BaG">Босния и Герцеговина</option>
-                  <option value="Czech">Чехия</option>
+                  <option value="Czech" selected>Чехия</option>
                   <button type="button">Добавьте страну</button>
                 </select>
                 <select class="step-card__countries-place" name="step-countries" id="step-countries">
@@ -204,20 +223,26 @@
                 </select>
                 <button class="step-card__countries-place">Добавить страну</button>
               </div>
-              <a href="#step-3" class="step-card__button">Следующий шаг</a>
-              <a class="step-card__prev" href="#step-1">На шаг назад</a>
+              <div class="step-card__button-container">
+                <a href="#step-3" class="step-card__button step-card__button--step2">Следующий шаг</a>
+                <a class="step-card__prev" href="#step-1">На шаг назад</a>
+              </div>
             </div>
             <div class="add-plan__step step-card" id="step-3">
-              <h3 class="step-card__title">Шаг 3.<br>Развлечения</h3>
+              <h3 class="step-card__title">Шаг 3.&nbsp;<br class="step-card__br">Развлечения</h3>
               <p class="step-card__description description">
-                Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.
+                Наконец, расскажите о своих планах времяпровождения. &nbsp;<br class="step-card__step2-br">Можно писать в свободной форме и ставить тэги.
               </p>
-              <label class="step-card__country3" for="BaG">Босния и Герцеговина</label>
-              <textarea class="step-card__country3-descr" name="BaG" id="BaG" cols="30" rows="10" placeholder="План действий"></textarea>
-              <label class="step-card__country3" for="Czech">Чехия</label>
-              <textarea class="step-card__country3-descr" name="Czech" id="Czech" cols="30" rows="10">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-              <button class="add-plan__send step-card__button" type="submit">Отправить</button>
-              <a class="step-card__prev" href="#step-2">На шаг назад</a>
+              <div class="step-card__textarea">
+                <label class="step-card__country3" for="BaG">Босния и Герцеговина</label>
+                <textarea class="step-card__country3-descr" name="BaG" id="BaG" cols="30" rows="10" placeholder="План действий"></textarea>
+                <label class="step-card__country3" for="Czech">Чехия</label>
+                <textarea class="step-card__country3-descr" name="Czech" id="Czech" cols="30" rows="10">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
+              </div>
+              <div class="step-card__button-container">
+                <button class="add-plan__send step-card__button step-card__button--step3" type="submit">Отправить</button>
+                <a class="step-card__prev step-card__prev--step3" href="#step-2">На шаг назад</a>
+              </div>
             </div>
           </form>
         </div>
@@ -225,18 +250,18 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <div class="page-footer__logo-container">
-          <img class="page-footer__logo page-footer__logo--mobile" src="img/logo-mobile-blue@1x.png" alt="" width="100" height="19">
-          <img class="page-footer__logo page-footer__logo--tablet" src="img/logo-tablet-blue@1x.png" alt="" width="164" height="42">
-          <img class="page-footer__logo page-footer__logo--desktop" src="img/logo-desktop-blue@1x.png" alt="" width="200" height="55">
-        </div>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x" width="">
+          <img class="page-footer__logo" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="" width="100" height="19">
+        </picture>
         <ul class="page-footer__social social-list">
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
           <li class="social-list__item social-list__item--yellow"><a href="#" class="social-list__link"></a></li>
         </ul>
         <div class="page-footer__copyright">
-          <span class="page-footer_copyright">Разработано</span>
+          <span class="page-footer__copyright-text">Разработано</span>
           <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="" class="page-footer__copyright-img" width="27" height="33"></a>
         </div>
       </div>

@@ -22,6 +22,10 @@
   @include width($mobile-width);
   padding: 82px 25px 44px 25px;
 
+  a {
+    color: $basic-yellow;
+  }
+
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
     padding: 76px;

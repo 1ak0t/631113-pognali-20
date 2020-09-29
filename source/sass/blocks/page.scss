@@ -6,6 +6,11 @@
   &--catalog {
     background-color: $destination-bg;
   }
+
+  a {
+    text-decoration: none;
+    color: $basic-blue;
+  }
 }
 
 .page__main-catalog {
@@ -25,9 +30,4 @@
     display: grid;
     grid-template-columns: 1035px 405px;
   }
-}
-
-a {
-  text-decoration: none;
-  color: $basic-blue;
 }

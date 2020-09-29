@@ -26,7 +26,7 @@
   background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 143px 143px, 64px 71px;
-  background-position: 152px 69px, 0 341px;
+  background-position: 152px 65px,-2px 337px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-desktop@2x.png");
@@ -107,7 +107,7 @@
 
 .companions__list {
   @include clear-list;
-  margin-top: 54px;
+  margin-top: 56px;
 
   @media (min-width: $tablet-width) {
     display: flex;

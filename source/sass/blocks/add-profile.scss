@@ -47,6 +47,9 @@
 }
 
 .add-profile__img {
+  position: relative;
+  left: 5px;
+
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 3/4;

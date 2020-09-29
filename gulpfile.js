@@ -50,19 +50,12 @@ const images = () => {
 exports.images = images;
 
 const webpJPGImages = () => {
-  return gulp.src('source/img/**/*.{jpg,jpeg}')
+  return gulp.src('source/img/**/*.{jpg,jpeg,png}')
     .pipe(webp({quality: 95}))
     .pipe(gulp.dest('source/img'));
 }
 
-const webpPNGImages = () => {
-  return gulp.src('source/img/**/*.{png}')
-    .pipe(webp({lossless: true}))
-    .pipe(gulp.dest('source/img'));
-}
-
 exports.webpJPGImages = webpJPGImages;
-exports.webpPNGImages = webpPNGImages;
 
 const sprite = () => {
   return gulp.src('source/img/**/icon-*.svg')
@@ -117,7 +110,7 @@ exports.js = js;
 
 // Build
 
-const build = gulp.series(clean, images, webpJPGImages, webpPNGImages, copy, styles, sprite, html, js);
+const build = gulp.series(clean, images, webpJPGImages, copy, styles, sprite, html, js);
 
 exports.build = build;
 

@@ -1,25 +1,41 @@
 .profile {
   background-color: $destination-bg;
   position: relative;
-  z-index: 10;
+  margin-top: -20px;
+  z-index: 14;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -50px;
+  }
 }
 
 .profile__container {
   @include width($mobile-width);
-  padding: 23px 25px 75px 25px;
+  padding: 39px 25px 75px 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 94px 1fr 94px;
+    grid-template-rows: 145px 60px 157px;
+    padding-top: 115px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
     @include width($desktop-width);
     position: relative;
-    grid-template-columns: 1100px 150px 190px;
-    top: -140px;
+    grid-template-columns: 832px 139px 285px;
+    grid-template-rows: 190px 74px;
+    justify-content: start;
+    margin-top: -190px;
+    padding-right: 60px;
+    padding-left: 124px;
+    padding-top: 0;
+    padding-bottom: 106px;
   }
 }
 
@@ -47,11 +63,18 @@
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
     grid-row: 1/2;
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3/4;
     grid-row: 1/2;
+    width: 190px;
+    height: 190px;
+    position: relative;
+    z-index: 17;
   }
 }
 
@@ -62,6 +85,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/4;
     grid-row: 2/3;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +105,13 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    height: 60px;
+    border-radius: 10px;
+    line-height: 60px;
+    letter-spacing: 0.09em;
+  }
+
   &--mobile {
     @media (min-width: $desktop-width) {
       display: none;
@@ -92,6 +123,8 @@
 
     @media (min-width: $desktop-width) {
       display: block;
+      width: 190px;
+      height: 47px;
     }
   }
 }
@@ -106,17 +139,38 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    color: $basic-blue;
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 1/4;
     grid-row: 3/4;
     justify-self: center;
+    align-self: end;
+    position: relative;
+
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      position: absolute;
+      top: 60px;
+      left: 267px;
+      background-color: $destination-bg;
+      z-index: 2;
+      padding-right: 17px;
+      padding-left: 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     grid-row: 3/4;
+    justify-self: start;
+
+    span {
+      left: 22px;
+    }
   }
 }
 
@@ -130,6 +184,26 @@
   margin-top: 15px;
   margin-left: 24px;
   margin-bottom: 25px;
+  color: $basic-gray;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 618px;
+    margin: 0;
+    margin-bottom: 4px;
+    padding-left: 40px;
+    padding-top: 33px;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    border: 1px solid $basic-gray;
+    border-radius: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 732px;
+  }
 }
 
 .profile__transport-container {
@@ -142,16 +216,42 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    color: $basic-blue;
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 1/2;
+    width: 307px;
+    height: 92px;
+    margin: 0 auto;
+    border: 1px solid $textarea;
+    border-radius: 10px;
+    position: relative;
+
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      position: absolute;
+      top: 69px;
+      left: 79px;
+      background-color: $destination-bg;
+      z-index: 2;
+      padding-right: 17px;
+      padding-left: 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/4;
     grid-row: 3/4;
+    width: 384px;
+    margin-left: 38px;
+
+    span {
+      left: 120px;
+    }
   }
 }
 

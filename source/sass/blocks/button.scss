@@ -23,8 +23,8 @@
     padding-right: 32px;
     background-position-x: 86.4%;
   }
-}
 
-.button--border {
-  border: 3px solid $header-steps-bg;
+  &--border {
+    border: 3px solid $header-steps-bg;
+  }
 }

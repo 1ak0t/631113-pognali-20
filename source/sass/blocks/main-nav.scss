@@ -1,11 +1,39 @@
 .main-nav {
-  display: none;
+  display: block;
+  position: absolute;
+  background-color: $basic-white;
+  width: 320px;
+  height: 568px;
+  top: 0px;
+  left: -25px;
+  z-index: 100;
+  padding: 0 25px;
+  padding-top: 28px;
+  box-sizing: border-box;
+  color: $header-steps-bg;
 
   @media (min-width: $desktop-width) {
     display: block;
     position: relative;
-    left: -109px;
-    top: 3px;
+    left: -60px;
+    top: 1px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: $basic-white;
+      position: absolute;
+      top: 9px;
+      left: -104px;
+    }
+  }
+
+  .main-nav__logo {
+    width: 100px;
+    height: 19px;
+
   }
 
   .main-nav__social {
@@ -16,33 +44,90 @@
 }
 
 .main-nav__list {
+  @include clear-list;
+  text-align: center;
+  margin-top: 66px;
+
   @media (min-width: $desktop-width) {
     @include clear-list;
     display: flex;
+
+    a {
+      color: $basic-white;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-right: 33px;
+    }
   }
 
   a {
-    color: $basic-white;
-    font-size: 20px;
-    font-weight: 500;
+    color: $header-steps-bg;
     text-transform: uppercase;
-    margin-right: 33px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
 .main-nav__login {
+  width: 270px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 65px;
+  border: 0;
+  font: inherit;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 50px;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
 .main-nav__tel {
+  display: block;
+  position: relative;
+  padding-left: 62px;
+  margin-bottom: 23px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: $tel-email url("../img/contacts-phone.svg") center center no-repeat;
+    background-size: 15px;
+    position: absolute;
+    top: -13px;
+    left: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
 .main-nav__email {
+  display: block;
+  position: relative;
+  padding-left: 62px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: $tel-email url("../img/contacts-mail.svg") center center no-repeat;
+    background-size: 16px;
+    position: absolute;
+    top: -13px;
+    left: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }

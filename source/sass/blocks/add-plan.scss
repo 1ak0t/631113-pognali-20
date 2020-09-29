@@ -4,28 +4,62 @@
   border-top-right-radius: 20px;
   position: relative;
   margin-top: -20px;
-  z-index: 12;
+  z-index: 14;
+
+  @media (min-width: $tablet-width) {
+    z-index: 14;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: -50px;
+  }
 }
 
 .add-plan__container {
   @include width($mobile-width);
-  padding: 9px 25px 34px 25px;
+  padding: 9px 25px 64px 25px;
 
   @media (min-width: $tablet-width) {
     @include width ($tablet-width);
+    padding-top: 31px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
     @include width ($desktop-width);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 78px;
   }
 }
 
 .add-plan__title {
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .add-plan__step {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .add-plan__send {

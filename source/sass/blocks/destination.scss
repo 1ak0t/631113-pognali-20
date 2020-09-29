@@ -21,7 +21,7 @@
 
 .destination__container {
   @include width($mobile-width);
-  padding: 82px 25px 34px 25px;
+  padding: 82px 25px 31px 25px;
 
   @media (min-width: $tablet-width) {
     @include width($tablet-width);

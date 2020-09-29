@@ -5,10 +5,12 @@
   &--inner {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    position: relative;
+    z-index: 15;
 
     @media (min-width: $tablet-width) {
-      border-bottom-right-radius: 60px;
-      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
       height: 350px;
     }
   }
@@ -241,7 +243,8 @@
   display: inline-block;
   width: 192px;
   height: 255px;
-  left: 55px;
+  left: 54px;
+  top: 8px;
 
   @media (min-width: $tablet-width) {
     width: 372px;
@@ -294,7 +297,7 @@
   position: relative;
   left: -25px;
   width: 320px;
-  padding: 49px 109px 109px 50px;
+  padding: 49px 109px 112px 50px;
   margin: 0;
   box-sizing: border-box;
 
