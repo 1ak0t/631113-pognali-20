@@ -23,28 +23,29 @@
   width: 35px;
   height: 25px;
   margin-right: 20px;
+  background-size: cover;
 
   &:last-child {
     margin-right: 0;
   }
 
   &--sri-lanka {
-    background: $basic-black;
+    background-image: url("../img/flag-sri-lanka.svg");
   }
 
   &--thailand {
-    background: $basic-black;
+    background-image: url("../img/flag-thailand.svg");
   }
 
   &--seychelles {
-    background: $basic-black;
+    background-image: url("../img/flag-seychelles.svg");
   }
 
   &--belgium {
-    background: $basic-black;
+    background-image: url("../img/flag-belgium.svg");
   }
 
   &--czech {
-    background: $basic-black;
+    background-image: url("../img/flag-czech.svg");
   }
 }

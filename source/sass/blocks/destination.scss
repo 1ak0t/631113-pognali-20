@@ -21,7 +21,7 @@
 
 .destination__container {
   @include width($mobile-width);
-  padding: 82px 25px 31px 25px;
+  padding: 82px 25px 34px 25px;
 
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
@@ -128,6 +128,6 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 563px;
-    left: 863px;
+    left: 1155px;
   }
 }

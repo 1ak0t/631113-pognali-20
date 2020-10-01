@@ -61,6 +61,12 @@
       border-radius: 0;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+
+      &::after {
+        font-size: 24px;
+        left: 268px;
+        top: 25px;
+      }
     }
   }
 
@@ -100,12 +106,18 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 345px;
+      width: 375px;
       height: 107px;
       border-radius: 0;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
       left: -30px;
+
+      &::after {
+        font-size: 24px;
+        left: 300px;
+        top: 25px;
+      }
     }
   }
 
@@ -142,12 +154,18 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 345px;
+      width: 375px;
       height: 107px;
       border-radius: 0;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
-      left: -30px;
+      left: -60px;
+
+      &::after {
+        font-size: 24px;
+        left: 300px;
+        top: 25px;
+      }
     }
   }
 
@@ -188,10 +206,16 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 345px;
+      width: 315px;
       height: 107px;
       border-radius: 20px;
-      left: -30px;
+      left: -90px;
+
+      &::after {
+        font-size: 24px;
+        left: 269px;
+        top: 25px;
+      }
     }
   }
 }

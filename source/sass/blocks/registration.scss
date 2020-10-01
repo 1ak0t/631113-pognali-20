@@ -29,7 +29,8 @@
   @media (min-width: $tablet-width) {
     @include width($tablet-width);
     padding: 76px;
-    padding-top: 82px;
+    padding-top: 75px;
+    padding-bottom: 79px;
   }
 
   @media (min-width: $desktop-width) {

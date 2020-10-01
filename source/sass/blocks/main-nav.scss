@@ -42,8 +42,8 @@
       height: 2px;
       background-color: $basic-white;
       position: absolute;
-      top: 28px;
-      left: -25px;
+      top: 34px;
+      left: -104px;
     }
   }
 
@@ -55,9 +55,18 @@
       width: 164px;
       height: 42px;
     }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   .main-nav__social {
+    @media (min-width: $tablet-width) {
+      margin-top: 118px;
+      padding-left: 57px;
+    }
+
     @media (min-width: $desktop-width) {
       display: none;
     }

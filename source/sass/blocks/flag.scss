@@ -4,7 +4,6 @@
     display: block;
     width: 35px;
     height: 24px;
-    background-color: $basic-black;
     border-radius: 3px;
     position: absolute;
     top: -13px;
@@ -21,6 +20,34 @@
     @media (min-width: $desktop-width) {
       left: 338px;
       top: 23px;
+    }
+  }
+
+  &--thailand {
+    &::before {
+      background-image: url("../img/flag-thailand.svg");
+      background-size: cover;
+    }
+  }
+
+  &--france {
+    &::before {
+      background-image: url("../img/flag-france.svg");
+      background-size: cover;
+    }
+  }
+
+  &--czech {
+    &::before {
+      background-image: url("../img/flag-czech.svg");
+      background-size: cover;
+    }
+  }
+
+  &--thailand {
+    &::before {
+      background-image: url("../img/flag-thailand.svg");
+      background-size: cover;
     }
   }
 }
