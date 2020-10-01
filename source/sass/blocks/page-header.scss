@@ -115,6 +115,7 @@
   background-color: transparent;
   cursor: pointer;
   position: relative;
+  z-index: 101;
 
   &::before {
     content: "";
@@ -263,6 +264,7 @@
 
 .page-header__buttons {
   position: relative;
+  z-index: 101;
 
   @media (max-width: (($tablet-width)-1)) {
     position: absolute;
